@@ -30,6 +30,7 @@ TextureImporter:
     21300050: Ylva sheet (1)_25
     21300052: Ylva sheet (1)_26
     21300054: Ylva sheet (1)_27
+    21300056: Ylva sheet (1)_28
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -315,11 +316,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1812
-        y: 0
-        width: 28
-        height: 50
+        y: 7
+        width: 26
+        height: 43
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Ylva sheet (1)_25
       rect:
@@ -348,6 +349,16 @@ TextureImporter:
         y: 0
         width: 25
         height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ylva sheet (1)_28
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 0
+        width: 20
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

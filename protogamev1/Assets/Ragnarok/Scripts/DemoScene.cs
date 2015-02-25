@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class DemoScene : MonoBehaviour
 {
 	// movement config
@@ -18,9 +17,6 @@ public class DemoScene : MonoBehaviour
 	private Animator _animator;
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
-
-
-
 
 	void Awake()
 	{
@@ -70,23 +66,26 @@ public class DemoScene : MonoBehaviour
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 
-		if( Input.GetKey( KeyCode.RightArrow ) )
-		{
+		if (Input.GetKey (KeyCode.RightArrow)) {
 			normalizedHorizontalSpeed = 1;
-			if( transform.localScale.x < 0f )
-				transform.localScale = new Vector3( -transform.localScale.x, transform.localScale.y, transform.localScale.z );
+			if (transform.localScale.x < 0f)
+				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 
-			if( _controller.isGrounded )
-				_animator.Play( Animator.StringToHash( "Run" ) );
-		}
-		else if( Input.GetKey( KeyCode.LeftArrow ) )
-		{
+			if (_controller.isGrounded)
+				_animator.Play (Animator.StringToHash ("Run"));
+		} else if (Input.GetKey (KeyCode.LeftArrow)) {
 			normalizedHorizontalSpeed = -1;
-			if( transform.localScale.x > 0f )
-				transform.localScale = new Vector3( -transform.localScale.x, transform.localScale.y, transform.localScale.z );
+			if (transform.localScale.x > 0f)
+				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 
-			if( _controller.isGrounded )
-				_animator.Play( Animator.StringToHash( "Run" ) );
+			if (_controller.isGrounded)
+				_animator.Play (Animator.StringToHash ("Run"));
+		} else if (Input.GetKey (KeyCode.Z)) {
+
+			if (_controller.isGrounded)
+			{
+				_animator.Play( Animator.StringToHash( "Attack" ) );
+			}
 		}
 		else
 		{
@@ -98,12 +97,11 @@ public class DemoScene : MonoBehaviour
 
 
 		// we can only jump whilst grounded
-		if( _controller.isGrounded && Input.GetKeyDown( KeyCode.UpArrow ) )
+		if( _controller.isGrounded && Input.GetKeyDown( KeyCode.Space ) )
 		{
 			_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
 			_animator.Play( Animator.StringToHash( "Jump" ) );
 		}
-
 
 		// apply horizontal speed smoothing it
 		var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
@@ -111,7 +109,6 @@ public class DemoScene : MonoBehaviour
 
 		// apply gravity before moving
 		_velocity.y += gravity * Time.deltaTime;
-
 		_controller.move( _velocity * Time.deltaTime );
 	}
 

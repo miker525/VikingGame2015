@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: f3d695f01618d0042a3246ae641a70ba
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 15SP_Block_Test_NL_01_0
+    21300002: 15SP_Block_Test_NL_01_1
+    21300004: 15SP_Block_Test_NL_01_2
+    21300006: 15SP_Block_Test_NL_01_3
+    21300008: 15SP_Block_Test_NL_01_4
+    21300010: 15SP_Block_Test_NL_01_5
+    21300012: 15SP_Block_Test_NL_01_6
+    21300014: 15SP_Block_Test_NL_01_7
+    21300016: 15SP_Block_Test_NL_01_8
+    21300018: 15SP_Block_Test_NL_01_9
+    21300020: 15SP_Block_Test_NL_01_10
+    21300022: 15SP_Block_Test_NL_01_11
+    21300024: 15SP_Block_Test_NL_01_12
+    21300026: 15SP_Block_Test_NL_01_13
+    21300028: 15SP_Block_Test_NL_01_14
+    21300030: 15SP_Block_Test_NL_01_15
+    21300032: 15SP_Block_Test_NL_01_16
+    21300034: 15SP_Block_Test_NL_01_17
+    21300036: 15SP_Block_Test_NL_01_18
+    21300038: 15SP_Block_Test_NL_01_19
+    21300040: 15SP_Block_Test_NL_01_20
+    21300042: 15SP_Block_Test_NL_01_21
+    21300044: 15SP_Block_Test_NL_01_22
+    21300046: 15SP_Block_Test_NL_01_23
+    21300048: 15SP_Block_Test_NL_01_24
+    21300050: 15SP_Block_Test_NL_01_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 15SP_Block_Test_NL_01_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 165
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 115
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 185
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 185
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 185
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 115
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_6
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 115
+        width: 25
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 116
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_8
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 150
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 150
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_10
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 150
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 115
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 115
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 115
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 65
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 91
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 5
+        width: 10
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_18
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 55
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_19
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 45
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 5
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 5
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 5
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_23
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 5
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_24
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 5
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Block_Test_NL_01_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 5
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

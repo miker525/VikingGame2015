@@ -3,6 +3,8 @@ using System.Collections;
 
 public class DemoScene : MonoBehaviour
 {
+
+	public static GameObject WalkedOverObject;
 	// movement config
 	public float gravity = -25f;
 	public float runSpeed = 8f;

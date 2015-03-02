@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 10125e3f23579914385a1abeaefc9148
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 15_Obj_Rune_Growth_Sheet_0
+    21300002: 15_Obj_Rune_Growth_Sheet_1
+    21300004: 15_Obj_Rune_Growth_Sheet_2
+    21300006: 15_Obj_Rune_Growth_Sheet_3
+    21300008: 15_Obj_Rune_Growth_Sheet_4
+    21300010: 15_Obj_Rune_Growth_Sheet_5
+    21300012: 15_Obj_Rune_Growth_Sheet_6
+    21300014: 15_Obj_Rune_Growth_Sheet_7
+    21300016: 15_Obj_Rune_Growth_Sheet_8
+    21300018: 15_Obj_Rune_Growth_Sheet_9
+    21300020: 15_Obj_Rune_Growth_Sheet_10
+    21300022: 15_Obj_Rune_Growth_Sheet_11
+    21300024: 15_Obj_Rune_Growth_Sheet_12
+    21300026: 15_Obj_Rune_Growth_Sheet_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 15_Obj_Rune_Growth_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Rune_Growth_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 5
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

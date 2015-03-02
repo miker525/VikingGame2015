@@ -49,6 +49,7 @@
      <Compile Include="Assets\Other\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Other\Scripts\SmoothCamera2D.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\DemoScene.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\PickupItem.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

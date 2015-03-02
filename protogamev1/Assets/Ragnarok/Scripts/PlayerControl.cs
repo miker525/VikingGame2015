@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DemoScene : MonoBehaviour
+public class PlayerControl : MonoBehaviour
 {
 
 	public static GameObject WalkedOverObject;
@@ -47,13 +47,18 @@ public class DemoScene : MonoBehaviour
 
 	void onTriggerEnterEvent( Collider2D col )
 	{
-		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.name );
+		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.tag );
+		if (col.gameObject.tag == "Sapphire")
+		{
+			Destroy(col.gameObject);
+			//this.GetComponent<healthScript>().health -= 1;
+		}
 	}
 
 
 	void onTriggerExitEvent( Collider2D col )
 	{
-		Debug.Log( "onTriggerExitEvent: " + col.gameObject.name );
+		//Debug.Log( "onTriggerExitEvent: " + col.gameObject.name );
 	}
 
 	#endregion

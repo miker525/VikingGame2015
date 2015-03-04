@@ -11,7 +11,7 @@ public class PlayerControl : MonoBehaviour
 	public float groundDamping = 20f; // how fast do we change direction? higher means faster
 	public float inAirDamping = 5f;
 	public float jumpHeight = 3f;
-	public bool isAttacking = false;
+
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 
@@ -44,27 +44,14 @@ public class PlayerControl : MonoBehaviour
 		//Debug.Log( "flags: " + _controller.collisionState + ", hit.normal: " + hit.normal );
 	}
 
-	//WALK INTO EVENTS
+
 	void onTriggerEnterEvent( Collider2D col )
 	{
 		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.tag );
-		if (col.gameObject.tag == "Sapphire") {
-			Destroy (col.gameObject);
+		if (col.gameObject.tag == "Sapphire")
+		{
+			Destroy(col.gameObject);
 			//this.GetComponent<healthScript>().health -= 1;
-		} else if (col.gameObject.tag == "Coin") {
-			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "Diamond") {
-			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "GodRune") {
-			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "StrRune") {
-			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "GrowthRune") {
-			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "JoyRune") {
-			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "PowerRune") {
-			Destroy (col.gameObject);
 		}
 	}
 
@@ -101,11 +88,10 @@ public class PlayerControl : MonoBehaviour
 			if (_controller.isGrounded)
 				_animator.Play (Animator.StringToHash ("Run"));
 		} else if (Input.GetKey (KeyCode.Z)) {
-			normalizedHorizontalSpeed = 0;
+
 			if (_controller.isGrounded)
 			{
 				_animator.Play( Animator.StringToHash( "Attack" ) );
-				isAttacking = true;
 			}
 		}
 		else
@@ -115,10 +101,7 @@ public class PlayerControl : MonoBehaviour
 			if( _controller.isGrounded )
 				_animator.Play( Animator.StringToHash( "Idle" ) );
 		}
-		if (Input.GetKeyUp (KeyCode.Z)) {
-			isAttacking = false;
-			Debug.Log( "Stopped Attacking");
-		}
+
 
 		// we can only jump whilst grounded
 		if( _controller.isGrounded && Input.GetKeyDown( KeyCode.Space ) )

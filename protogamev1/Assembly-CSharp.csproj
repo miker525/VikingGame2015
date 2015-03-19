@@ -51,6 +51,7 @@
      <Compile Include="Assets\Ragnarok\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

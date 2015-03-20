@@ -48,8 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Other\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Other\Scripts\SmoothCamera2D.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\EnemyAI.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\EnemyController.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\BarrelScript.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\CrateScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />
  <Reference Include="UnityEngine.UI">

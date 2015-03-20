@@ -65,6 +65,9 @@ public class PlayerControl : MonoBehaviour
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "PowerRune") {
 			Destroy (col.gameObject);
+		} else if (col.gameObject.tag == "Barrell") {
+			Debug.Log ("Walked Into Barrel");
+
 		}
 
 	}

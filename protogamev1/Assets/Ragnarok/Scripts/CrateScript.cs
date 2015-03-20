@@ -5,13 +5,13 @@ public class CrateScript : MonoBehaviour {
 
 	public int maxHealth = 6;
 	private int damage = 0;
-	
+	private Animator canimator;
 	
 	public void TakeDamage(int damageamt)
 	{
 		if (damage < maxHealth) 
 		{
-			damage++;
+			damage+=damageamt;
 			Debug.Log ("Damage Taken");
 		}
 		
@@ -26,18 +26,16 @@ public class CrateScript : MonoBehaviour {
 	// Use this for initialization
 	void Awake () 
 	{
+		canimator = GetComponent<Animator>();
 		TakeDamage (3);
-		Debug.Log ("Crate damage increased");
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (damage == 3) 
+		if (damage == maxHealth/2) 
 		{
-			//Sprite newSprite = Resources.Load("physical_1", typeof(Sprite)) as Sprite;
-			Sprite newSprite = Resources.Load<Sprite>("physical_1");
-			GetComponent<SpriteRenderer>().sprite = newSprite;
+			canimator.Play (Animator.StringToHash ("cratedamaged"));
 		}
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class BarrelScript : MonoBehaviour {
 	public int maxHealth = 3;
 	private int damage = 0;
-
+	private Animator banimator;
 
 	public void TakeDamage(int damageamt)
 	{
@@ -25,8 +25,8 @@ public class BarrelScript : MonoBehaviour {
 	// Use this for initialization
 	void Awake () 
 	{
-		//TakeDamage (1);
-		//Debug.Log ("barrel damage increased");
+		banimator = GetComponent<Animator>();
+		TakeDamage (1);
 	}
 	
 	// Update is called once per frame
@@ -34,13 +34,11 @@ public class BarrelScript : MonoBehaviour {
 	{
 		if (damage == 1) 
 		{
-			Sprite newSprite = Resources.Load("physical_3", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = newSprite;
+			banimator.Play (Animator.StringToHash ("BarrelHit1"));
 		}
 		if (damage == 2) 
 		{
-			Sprite newSprite = Resources.Load("physical_4", typeof(Sprite)) as Sprite;
-			GetComponent<SpriteRenderer>().sprite = newSprite;
+			banimator.Play (Animator.StringToHash ("BarrelHit2"));
 		}
 	}
 }

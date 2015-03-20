@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 71c917da4068def4390881b70cf3122a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Axes_0
+    21300002: Axes_1
+    21300004: Axes_2
+    21300006: Axes_3
+    21300008: Axes_4
+    21300010: Axes_5
+    21300012: Axes_6
+    21300014: Axes_7
+    21300016: Axes_8
+    21300018: Axes_9
+    21300020: Axes_10
+    21300022: Axes_11
+    21300024: Axes_12
+    21300026: Axes_13
+    21300028: Axes_14
+    21300030: Axes_15
+    21300032: Axes_16
+    21300034: Axes_17
+    21300036: Axes_18
+    21300038: Axes_19
+    21300040: Axes_20
+    21300042: Axes_21
+    21300044: Axes_22
+    21300046: Axes_23
+    21300048: Axes_24
+    21300050: Axes_25
+    21300052: Axes_26
+    21300054: Axes_27
+    21300056: Axes_28
+    21300058: Axes_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Axes_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 6
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 6
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 7
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 6
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 3
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 6
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_8
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 6
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_9
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 7
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 6
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_11
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 4
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_12
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 6
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_13
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 6
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_14
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 7
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_15
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 6
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_16
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_17
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 6
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_18
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 6
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_19
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 7
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_20
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 6
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_21
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 3
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_22
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 6
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_23
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 6
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_24
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 7
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_25
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 6
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_26
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 4
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_27
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 6
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_28
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 6
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Axes_29
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 7
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

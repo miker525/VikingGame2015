@@ -19,7 +19,7 @@ public class RedEnemyAI : MonoBehaviour {
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 	private float maxSqrDistance = 4;
-	private bool isDead = false;
+	public bool isDead = false;
 	private bool isJumping = false;
 	private bool isRunning = false;
 	private bool isIdle = true;
@@ -29,7 +29,8 @@ public class RedEnemyAI : MonoBehaviour {
 	private Vector3 velocity;
 	private Vector3 Origin;
 	float originReturnTimer = 3.5f;
-	
+	float hurtTimer = 2f;
+
 	void Awake()
 	{
 		animatorz = GetComponent<Animator> ();
@@ -51,10 +52,17 @@ public class RedEnemyAI : MonoBehaviour {
 		transform.localScale = theScale;
 	}
 	
-	void TakeDamage(double dmgamt)
+	public void TakeDamage(double dmgamt)
 	{
-		health -= dmgamt;
-		isHurt = true;
+		if (health - dmgamt <= 0) 
+		{
+			isDead = true;
+		} 
+		else 
+		{
+			health -= dmgamt;
+			isHurt = true;
+		}
 	}
 	
 	void returnToOrigin(Vector3 pointOfOrigin)
@@ -128,12 +136,24 @@ public class RedEnemyAI : MonoBehaviour {
 		Vector3 dir = target.transform.position - transform.position;
 		float distance = dir.sqrMagnitude, //Length squared because a sqrt is expensive
 		dot = Vector3.Dot(transform.forward, dir.normalized);
-		
 		if( _controller.isGrounded )
 			_velocity.y = 0;
+
+		if (isDead) 
+		{
+			if(gameObject.tag == "Enemy")
+			{
+				Destroy(this.gameObject);
+			}
+		}
 		
+		if (isHurt) 
+		{
+			//Retreat Code Here;
+		}
+
 		//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
-		if (distance < maxSqrDistance && distance > .4) //.1
+		if (distance < maxSqrDistance && distance > .15) //.1
 		{
 			MoveTo (dir);
 			if (originReturnTimer != 3.5f)

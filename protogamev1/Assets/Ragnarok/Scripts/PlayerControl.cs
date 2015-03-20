@@ -66,6 +66,7 @@ public class PlayerControl : MonoBehaviour
 		} else if (col.gameObject.tag == "PowerRune") {
 			Destroy (col.gameObject);
 		}
+
 	}
 	
 	
@@ -106,6 +107,7 @@ public class PlayerControl : MonoBehaviour
 			{
 				_animator.Play( Animator.StringToHash( "Attack" ) );
 				isAttacking = true;
+
 			}
 		}
 		else
@@ -126,7 +128,8 @@ public class PlayerControl : MonoBehaviour
 			_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
 			_animator.Play( Animator.StringToHash( "Jump" ) );
 		}
-		
+
+
 		// apply horizontal speed smoothing it
 		var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
 		_velocity.x = Mathf.Lerp( _velocity.x, normalizedHorizontalSpeed * runSpeed, Time.deltaTime * smoothedMovementFactor );

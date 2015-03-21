@@ -110,8 +110,25 @@ public class PlayerControl : MonoBehaviour
 			{
 				_animator.Play( Animator.StringToHash( "Attack" ) );
 				isAttacking = true;
+			}
+			int environmentLayerMask = 1 << LayerMask.NameToLayer("Enivornment");
+			//Collider[] overlappedThings = Physics2D.OverlapCircleAll(transform.position.x, transform.position.y, 2f, environmentLayerMask);
+			Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, 0.5f, environmentLayerMask);
+			for (int i=0;i<overlappedThings.Length;i++)
+			{
+				GameObject e = overlappedThings[i].gameObject;
+				Debug.Log (e.tag);
+				if (e.tag == "Barrell")
+				{
+					e.GetComponent<BarrelScript>().TakeDamage(1);
+				}
+				else if (e.tag == "Crate")
+				{
+					e.GetComponent<CrateScript>().TakeDamage(1);
+				}
 
 			}
+		
 		}
 		else
 		{

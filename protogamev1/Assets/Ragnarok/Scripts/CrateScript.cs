@@ -27,13 +27,13 @@ public class CrateScript : MonoBehaviour {
 	void Awake () 
 	{
 		canimator = GetComponent<Animator>();
-		TakeDamage (3);
+		//TakeDamage (3);
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (damage == maxHealth/2) 
+		if (damage >= maxHealth/2) 
 		{
 			canimator.Play (Animator.StringToHash ("cratedamaged"));
 		}

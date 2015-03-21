@@ -10,7 +10,7 @@ public class BarrelScript : MonoBehaviour {
 	{
 		if (damage < maxHealth) 
 		{
-			damage++;
+			damage+=damageamt;
 			Debug.Log ("Damage Taken");
 		}
 
@@ -26,7 +26,7 @@ public class BarrelScript : MonoBehaviour {
 	void Awake () 
 	{
 		banimator = GetComponent<Animator>();
-		TakeDamage (1);
+		//TakeDamage (1);
 	}
 	
 	// Update is called once per frame

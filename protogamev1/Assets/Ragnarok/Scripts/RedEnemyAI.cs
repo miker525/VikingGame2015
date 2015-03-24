@@ -31,6 +31,7 @@ public class RedEnemyAI : MonoBehaviour {
 	private float originReturnTimer = 3.5f;
 	private float hurtTimer = .40f;
 	private float dmgtime = 2.5f;
+	private bool isFlashing = false;
 
 	void Awake()
 	{
@@ -116,9 +117,9 @@ public class RedEnemyAI : MonoBehaviour {
 
 	IEnumerator Flash()
 	{
-		for(var n = 0; n < 8; n++)
+		isFlashing = true;
+		for(var n = 0; n < 10; n++)
 		{
-
 			renderer.enabled = true;
 			yield return new WaitForSeconds(0.1f);
 			renderer.enabled = false;
@@ -176,7 +177,10 @@ public class RedEnemyAI : MonoBehaviour {
 		
 		if (isHurt) 
 		{
-			StartCoroutine(Flash ());
+			if (!isFlashing)
+			{
+				StartCoroutine(Flash ());
+			}
 			if (dmgtime > 0)
 			{
 				Debug.Log ("POP");

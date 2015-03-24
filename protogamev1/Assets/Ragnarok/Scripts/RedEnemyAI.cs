@@ -19,7 +19,7 @@ public class RedEnemyAI : MonoBehaviour {
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 	private float maxSqrDistance = 4;
-	public bool isDead = false;
+	private bool isDead = false;
 	private bool isJumping = false;
 	private bool isRunning = false;
 	private bool isIdle = true;
@@ -28,14 +28,14 @@ public class RedEnemyAI : MonoBehaviour {
 	private bool isFacingRight = true;
 	private Vector3 velocity;
 	private Vector3 Origin;
-	float originReturnTimer = 3.5f;
-	float hurtTimer = 2f;
+	private float originReturnTimer = 3.5f;
+	private float hurtTimer = .40f;
+	private float dmgtime = 2.5f;
 
 	void Awake()
 	{
 		animatorz = GetComponent<Animator> ();
 		_controller = GetComponent<CharacterController2D>();
-		// listen to some events for illustration purposes
 		_controller.onControllerCollidedEvent += onControllerCollider;
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
@@ -63,6 +63,16 @@ public class RedEnemyAI : MonoBehaviour {
 			health -= dmgamt;
 			isHurt = true;
 		}
+	}
+
+	public bool checkHurt()
+	{
+		return isHurt;
+	}
+
+	public bool checkDead()
+	{
+		return isDead;
 	}
 	
 	void returnToOrigin(Vector3 pointOfOrigin)
@@ -98,19 +108,36 @@ public class RedEnemyAI : MonoBehaviour {
 		animatorz.Play (Animator.StringToHash ("Walk"));
 		transform.Translate(moveTo.normalized.x * runSpeed * Time.deltaTime, 0, 0);
 	}
-	
+
+	void Retreat(Vector3 vec)
+	{
+		MoveTo (-vec);
+	}
+
+	IEnumerator Flash()
+	{
+		for(var n = 0; n < 8; n++)
+		{
+
+			renderer.enabled = true;
+			yield return new WaitForSeconds(0.1f);
+			renderer.enabled = false;
+			yield return new WaitForSeconds(0.1f);
+		}
+		renderer.enabled = true;
+	}
+
+
+
 	#endregion
 	
 	#region Event Listeners
 	
 	void onControllerCollider( RaycastHit2D hit )
 	{
-		// bail out on plain old ground hits cause they arent very interesting
 		if( hit.normal.y == 1f )
 			return;
-		
-		// logs any collider hits if uncommented. it gets noisy so it is commented out for the demo
-		//Debug.Log( "flags: " + _controller.collisionState + ", hit.normal: " + hit.normal );
+
 	}
 	
 	//WALK INTO EVENTS
@@ -122,7 +149,7 @@ public class RedEnemyAI : MonoBehaviour {
 	
 	void onTriggerExitEvent( Collider2D col )
 	{
-		//Debug.Log( "onTriggerExitEvent: " + col.gameObject.name );
+
 	}
 	
 	#endregion
@@ -139,21 +166,32 @@ public class RedEnemyAI : MonoBehaviour {
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 
-		if (isDead) 
+		/*if (isDead) 
 		{
 			if(gameObject.tag == "Enemy")
 			{
 				Destroy(this.gameObject);
 			}
-		}
+		}*/
 		
 		if (isHurt) 
 		{
-			//Retreat Code Here;
+			StartCoroutine(Flash ());
+			if (dmgtime > 0)
+			{
+				Debug.Log ("POP");
+				Retreat(dir);
+				dmgtime -= Time.deltaTime;
+			}
+			if (dmgtime < 0)
+			{
+				isHurt = false;
+				Debug.Log ("SAFE");
+			}
 		}
 
 		//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
-		if (distance < maxSqrDistance && distance > .15) //.1
+		if (distance < maxSqrDistance && distance > .18 && !isHurt) 
 		{
 			MoveTo (dir);
 			if (originReturnTimer != 3.5f)

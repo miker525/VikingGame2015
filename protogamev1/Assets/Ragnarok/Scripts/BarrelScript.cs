@@ -26,9 +26,9 @@ public class BarrelScript : MonoBehaviour {
 	void Awake () 
 	{
 		banimator = GetComponent<Animator>();
-		//TakeDamage (1);
 	}
-	
+
+
 	// Update is called once per frame
 	void Update () 
 	{

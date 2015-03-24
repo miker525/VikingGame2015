@@ -14,12 +14,12 @@ public class PlayerControl : MonoBehaviour
 	public bool isAttacking = false;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
-	
 	private CharacterController2D _controller;
 	private Animator _animator;
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
-	
+	float swingtime = .28f;
+
 	void Awake()
 	{
 		_animator = GetComponent<Animator>();
@@ -104,7 +104,8 @@ public class PlayerControl : MonoBehaviour
 			
 			if (_controller.isGrounded)
 				_animator.Play (Animator.StringToHash ("Run"));
-		} else if (Input.GetKey (KeyCode.Z)) {
+		} else if (Input.GetKey (KeyCode.Z)) 
+		{
 			normalizedHorizontalSpeed = 0;
 			if (_controller.isGrounded)
 			{
@@ -112,21 +113,66 @@ public class PlayerControl : MonoBehaviour
 				isAttacking = true;
 			}
 			int environmentLayerMask = 1 << LayerMask.NameToLayer("Enivornment");
+			int enemyLayerMask = 1 << LayerMask.NameToLayer("Enemy");
 			//Collider[] overlappedThings = Physics2D.OverlapCircleAll(transform.position.x, transform.position.y, 2f, environmentLayerMask);
-			Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, 0.5f, environmentLayerMask);
-			for (int i=0;i<overlappedThings.Length;i++)
+
+			if (swingtime > 0) 
 			{
-				GameObject e = overlappedThings[i].gameObject;
-				Debug.Log (e.tag);
-				if (e.tag == "Barrell")
+				swingtime -= Time.deltaTime;
+			} 
+			else if (swingtime <= 0) 
+			{
+				/* Checking For Objects */
+				Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, 0.3f, environmentLayerMask);
+				for (int i=0;i<overlappedThings.Length;i++)
 				{
-					e.GetComponent<BarrelScript>().TakeDamage(1);
-				}
-				else if (e.tag == "Crate")
-				{
-					e.GetComponent<CrateScript>().TakeDamage(1);
+					GameObject e = overlappedThings[i].gameObject;
+					Debug.Log (e.tag);
+					if (e.tag == "Barrell")
+					{
+						if (e.GetComponent<BarrelScript>().CheckDamage() >= e.GetComponent<BarrelScript>().maxHealth)
+						{
+							Destroy(e.gameObject);
+						}
+						else
+						{
+							e.GetComponent<BarrelScript>().TakeDamage(1);
+						}
+					}
+					else if (e.tag == "Crate")
+					{
+						if (e.GetComponent<CrateScript>().CheckDamage() >= e.GetComponent<CrateScript>().maxHealth)
+						{
+							Destroy(e.gameObject);
+						}
+						else
+						{
+							e.GetComponent<CrateScript>().TakeDamage(1);
+						}
+
+					}
 				}
 
+				/*Checking For Enemies */
+				Collider2D[] overlappedEnemies = Physics2D.OverlapCircleAll(transform.position, 0.3f, enemyLayerMask);
+				for (int i=0;i<overlappedEnemies.Length;i++)
+				{
+					GameObject e = overlappedEnemies[i].gameObject;
+					//Debug.Log (e.tag);
+					if (e.tag == "Enemy")
+					{
+						if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
+						{
+							e.GetComponent<RedEnemyAI>().TakeDamage (34.00);
+						}
+						else if (e.GetComponent<RedEnemyAI>().checkDead())
+						{
+							Destroy(e.gameObject);
+						}
+					}
+				}
+
+				swingtime = .28f;
 			}
 		
 		}
@@ -136,11 +182,15 @@ public class PlayerControl : MonoBehaviour
 			
 			if( _controller.isGrounded )
 				_animator.Play( Animator.StringToHash( "Idle" ) );
+
+			isAttacking = false;
 		}
-		if (Input.GetKeyUp (KeyCode.Z)) {
+
+
+		/*if (Input.GetKeyUp (KeyCode.Z)) {
 			isAttacking = false;
 			Debug.Log( "Stopped Attacking");
-		}
+		}*/
 		
 		// we can only jump whilst grounded
 		if( _controller.isGrounded && Input.GetKeyDown( KeyCode.Space ) )

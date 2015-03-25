@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: f3fcd121f2b8fe94a91abc012e267768
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 15SP_Buildings_SHORT_NL_01_0
+    21300002: 15SP_Buildings_SHORT_NL_01_1
+    21300004: 15SP_Buildings_SHORT_NL_01_2
+    21300006: 15SP_Buildings_SHORT_NL_01_3
+    21300008: 15SP_Buildings_SHORT_NL_01_4
+    21300010: 15SP_Buildings_SHORT_NL_01_5
+    21300012: 15SP_Buildings_SHORT_NL_01_6
+    21300014: 15SP_Buildings_SHORT_NL_01_7
+    21300016: 15SP_Buildings_SHORT_NL_01_8
+    21300018: 15SP_Buildings_SHORT_NL_01_9
+    21300020: 15SP_Buildings_SHORT_NL_01_10
+    21300022: 15SP_Buildings_SHORT_NL_01_11
+    21300024: 15SP_Buildings_SHORT_NL_01_12
+    21300026: 15SP_Buildings_SHORT_NL_01_13
+    21300028: 15SP_Buildings_SHORT_NL_01_14
+    21300030: 15SP_Buildings_SHORT_NL_01_15
+    21300032: 15SP_Buildings_SHORT_NL_01_16
+    21300034: 15SP_Buildings_SHORT_NL_01_17
+    21300036: 15SP_Buildings_SHORT_NL_01_18
+    21300038: 15SP_Buildings_SHORT_NL_01_19
+    21300040: 15SP_Buildings_SHORT_NL_01_20
+    21300042: 15SP_Buildings_SHORT_NL_01_21
+    21300044: 15SP_Buildings_SHORT_NL_01_22
+    21300046: 15SP_Buildings_SHORT_NL_01_23
+    21300048: 15SP_Buildings_SHORT_NL_01_24
+    21300050: 15SP_Buildings_SHORT_NL_01_25
+    21300052: 15SP_Buildings_SHORT_NL_01_26
+    21300054: 15SP_Buildings_SHORT_NL_01_27
+    21300056: 15SP_Buildings_SHORT_NL_01_28
+    21300058: 15SP_Buildings_SHORT_NL_01_29
+    21300060: 15SP_Buildings_SHORT_NL_01_30
+    21300062: 15SP_Buildings_SHORT_NL_01_31
+    21300064: 15SP_Buildings_SHORT_NL_01_32
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 15SP_Buildings_SHORT_NL_01_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 192
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 192
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 192
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 192
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 192
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 192
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 157
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 157
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_9
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 157
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_10
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 157
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 117
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 117
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_13
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 117
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 117
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_15
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 117
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_16
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 117
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 82
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_19
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 82
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 82
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_21
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 82
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 42
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_23
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 42
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_24
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 42
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_25
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 42
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_26
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 42
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_27
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 42
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_28
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 7
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_29
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_30
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 7
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_31
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 7
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_Buildings_SHORT_NL_01_32
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 7
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

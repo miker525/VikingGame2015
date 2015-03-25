@@ -57,6 +57,7 @@ public class PlayerControl : MonoBehaviour
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "GodRune") {
 			Destroy (col.gameObject);
+			col.GetComponent<RuneEffect>().ApplyRune();
 		} else if (col.gameObject.tag == "StrRune") {
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "GrowthRune") {

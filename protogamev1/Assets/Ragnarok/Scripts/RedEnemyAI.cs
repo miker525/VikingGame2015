@@ -127,9 +127,7 @@ public class RedEnemyAI : MonoBehaviour {
 		}
 		renderer.enabled = true;
 	}
-
-
-
+	
 	#endregion
 	
 	#region Event Listeners
@@ -138,7 +136,6 @@ public class RedEnemyAI : MonoBehaviour {
 	{
 		if( hit.normal.y == 1f )
 			return;
-
 	}
 	
 	//WALK INTO EVENTS

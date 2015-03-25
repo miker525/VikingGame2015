@@ -1,6 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ragnarok\Scripts\RuneEffect.cs">
+    <Files>
+      <File FileName="Assets\Ragnarok\Scripts\RuneEffect.cs" Line="10" Column="3" />
+      <File FileName="Assets\Ragnarok\Scripts\PlayerControl.cs" Line="60" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

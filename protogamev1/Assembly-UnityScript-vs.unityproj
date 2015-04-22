@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{D9594A57-00A7-DE1C-4AC8-759F74A1D392}</ProjectGuid>
+	<ProjectGuid>{009965E5-7A2E-4F70-384C-2BCAEF0C2807}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,17 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Other\Scripts\CharacterController2D.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\BarrelScript.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\BossAI.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\CrateScript.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\HUDScript.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\RespawnScript.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\RuneEffect.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\SceneScript.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\SmoothCam.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\SOUNDINDEX.IGNORE.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

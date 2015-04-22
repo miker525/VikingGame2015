@@ -51,7 +51,6 @@
      <Compile Include="Assets\Ragnarok\Scripts\BossAI.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\CrateScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\HUDScript.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\PickupSound.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RespawnScript.cs" />

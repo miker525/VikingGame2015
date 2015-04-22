@@ -25,6 +25,8 @@ public class PlayerControl : MonoBehaviour
 	private Vector3 _velocity;
 	private bool isDead = false;
 	float swingtime = .28f;
+	private AudioSource[] sounds;
+
 
 	void Awake()
 	{
@@ -34,6 +36,7 @@ public class PlayerControl : MonoBehaviour
 		_controller.onControllerCollidedEvent += onControllerCollider;
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
+		sounds = GetComponents<AudioSource> ();
 	}
 	
 	
@@ -54,27 +57,35 @@ public class PlayerControl : MonoBehaviour
 	{
 		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.tag );
 		if (col.gameObject.tag == "Sapphire") {
+			sounds [2].Play ();
 			Destroy (col.gameObject);
 			//this.GetComponent<healthScript>().health -= 1;
 		} else if (col.gameObject.tag == "Coin") {
-			//col.gameObject.audio.PlayOneShot();
+			sounds [1].Play ();
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "Diamond") {
+			sounds [2].Play ();
 			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "GodRune") {
+		} else if (col.gameObject.tag == "Emerald") {
+			sounds [2].Play ();
+			Destroy (col.gameObject);
+		}
+		else if (col.gameObject.tag == "GodRune") {
+			sounds [3].Play ();
 			Destroy (col.gameObject);
 			col.GetComponent<RuneEffect> ().ApplyRune ();
 		} else if (col.gameObject.tag == "StrRune") {
+			sounds [3].Play ();
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "GrowthRune") {
+			sounds [3].Play ();
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "JoyRune") {
+			sounds [3].Play ();
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "PowerRune") {
+			sounds [3].Play ();
 			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "Barrell") {
-			Debug.Log ("Walked Into Barrel");
-
 		} else if (col.gameObject.tag == "Sword") {
 			this.hasSword = true;
 			this.Weapon = 2;
@@ -218,7 +229,8 @@ public class PlayerControl : MonoBehaviour
 		{
 			_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
 			_animator.Play( Animator.StringToHash( "Jump" ) );
-			audio.Play();
+			sounds[0].Play();
+			//audio.Play();
 		}
 
 		if (health <= 0) {

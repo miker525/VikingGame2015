@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 40e166e9dedaab14f94d0cc042ebbead
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 15_Obj_Emer_0
+    21300002: 15_Obj_Emer_1
+    21300004: 15_Obj_Emer_2
+    21300006: 15_Obj_Emer_3
+    21300008: 15_Obj_Emer_4
+    21300010: 15_Obj_Emer_5
+    21300012: 15_Obj_Emer_6
+    21300014: 15_Obj_Emer_7
+    21300016: 15_Obj_Emer_8
+    21300018: 15_Obj_Emer_9
+    21300020: 15_Obj_Emer_10
+    21300022: 15_Obj_Emer_11
+    21300024: 15_Obj_Emer_12
+    21300026: 15_Obj_Emer_13
+    21300028: 15_Obj_Emer_14
+    21300030: 15_Obj_Emer_15
+    21300032: 15_Obj_Emer_16
+    21300034: 15_Obj_Emer_17
+    21300036: 15_Obj_Emer_18
+    21300038: 15_Obj_Emer_19
+    21300040: 15_Obj_Emer_20
+    21300042: 15_Obj_Emer_21
+    21300044: 15_Obj_Emer_22
+    21300046: 15_Obj_Emer_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 15_Obj_Emer_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_9
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_10
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_12
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 3
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_13
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 3
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_15
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_16
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_17
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_18
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_19
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_20
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_21
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_22
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15_Obj_Emer_23
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 2
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

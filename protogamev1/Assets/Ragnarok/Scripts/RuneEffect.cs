@@ -4,6 +4,7 @@ using System.Collections;
 public class RuneEffect : MonoBehaviour 
 {
 	public Transform target;
+	public float time = 30.0f;
 	// Use this for initialization
 	void Awake () 
 	{
@@ -14,7 +15,15 @@ public class RuneEffect : MonoBehaviour
 	{
 		if (transform.tag == "GodRune") 
 		{
-			
+			if (time > 0) 
+			{
+				time -= Time.deltaTime;
+
+			} 
+			else if (time <= 0) 
+			{
+
+			}
 		} 
 		else if (transform.tag == "StrRune") 
 		{

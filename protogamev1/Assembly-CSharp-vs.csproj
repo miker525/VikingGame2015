@@ -48,10 +48,15 @@
   <ItemGroup>
      <Compile Include="Assets\Other\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\BarrelScript.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\BossAI.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\CrateScript.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\HUDScript.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\PickupSound.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\RespawnScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RuneEffect.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\SceneScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\SmoothCam.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>

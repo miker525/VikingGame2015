@@ -11,20 +11,25 @@ public class PlayerControl : MonoBehaviour
 	public float groundDamping = 20f; // how fast do we change direction? higher means faster
 	public float inAirDamping = 5f;
 	public float jumpHeight = 3f;
+	public float AttackRadius = 0.3f;
 	public bool isAttacking = false;
+	public bool hasSword = true;
+	public bool hasStaff = false;
+	public int health = 5;
+	public int Weapon = 2;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 	private CharacterController2D _controller;
 	private Animator _animator;
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
+	private bool isDead = false;
 	float swingtime = .28f;
 
 	void Awake()
 	{
 		_animator = GetComponent<Animator>();
 		_controller = GetComponent<CharacterController2D>();
-		
 		// listen to some events for illustration purposes
 		_controller.onControllerCollidedEvent += onControllerCollider;
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
@@ -52,12 +57,13 @@ public class PlayerControl : MonoBehaviour
 			Destroy (col.gameObject);
 			//this.GetComponent<healthScript>().health -= 1;
 		} else if (col.gameObject.tag == "Coin") {
+			//col.gameObject.audio.PlayOneShot();
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "Diamond") {
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "GodRune") {
 			Destroy (col.gameObject);
-			col.GetComponent<RuneEffect>().ApplyRune();
+			col.GetComponent<RuneEffect> ().ApplyRune ();
 		} else if (col.gameObject.tag == "StrRune") {
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "GrowthRune") {
@@ -69,6 +75,11 @@ public class PlayerControl : MonoBehaviour
 		} else if (col.gameObject.tag == "Barrell") {
 			Debug.Log ("Walked Into Barrel");
 
+		} else if (col.gameObject.tag == "Sword") {
+			this.hasSword = true;
+			this.Weapon = 2;
+		} else if (col.gameObject.tag == "Respawn") {
+			health = 0;
 		}
 
 	}
@@ -107,10 +118,18 @@ public class PlayerControl : MonoBehaviour
 				_animator.Play (Animator.StringToHash ("Run"));
 		} else if (Input.GetKey (KeyCode.Z)) 
 		{
+			Debug.Log (hasSword + " " + Weapon);
 			normalizedHorizontalSpeed = 0;
 			if (_controller.isGrounded)
 			{
-				_animator.Play( Animator.StringToHash( "Attack" ) );
+				if (hasSword && Weapon == 2)
+				{
+					_animator.Play( Animator.StringToHash( "SwordAttack" ) );
+				}
+				else
+				{
+					_animator.Play( Animator.StringToHash( "Attack" ) );
+				}
 				isAttacking = true;
 			}
 			int environmentLayerMask = 1 << LayerMask.NameToLayer("Enivornment");
@@ -128,6 +147,7 @@ public class PlayerControl : MonoBehaviour
 				for (int i=0;i<overlappedThings.Length;i++)
 				{
 					GameObject e = overlappedThings[i].gameObject;
+
 					Debug.Log (e.tag);
 					if (e.tag == "Barrell")
 					{
@@ -155,7 +175,7 @@ public class PlayerControl : MonoBehaviour
 				}
 
 				/*Checking For Enemies */
-				Collider2D[] overlappedEnemies = Physics2D.OverlapCircleAll(transform.position, 0.3f, enemyLayerMask);
+				Collider2D[] overlappedEnemies = Physics2D.OverlapCircleAll(transform.position, AttackRadius, enemyLayerMask);
 				for (int i=0;i<overlappedEnemies.Length;i++)
 				{
 					GameObject e = overlappedEnemies[i].gameObject;
@@ -198,9 +218,16 @@ public class PlayerControl : MonoBehaviour
 		{
 			_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
 			_animator.Play( Animator.StringToHash( "Jump" ) );
+			audio.Play();
 		}
 
+		if (health <= 0) {
+			isDead = true;
+		}
 
+		if (isDead) {
+			Application.LoadLevel (Application.loadedLevel);
+		}
 		// apply horizontal speed smoothing it
 		var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
 		_velocity.x = Mathf.Lerp( _velocity.x, normalizedHorizontalSpeed * runSpeed, Time.deltaTime * smoothedMovementFactor );

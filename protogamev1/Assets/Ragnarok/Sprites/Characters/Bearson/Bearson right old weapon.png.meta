@@ -1,33 +1,33 @@
 fileFormatVersion: 2
-guid: d67c1a636aefb7f4883b5289b2c2537a
+guid: 33c827aa219fff64ba1d4e4a4d3245f0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 15_Sprite_Red_Enemy1_0
-    21300002: 15_Sprite_Red_Enemy1_1
-    21300004: 15_Sprite_Red_Enemy1_2
-    21300006: 15_Sprite_Red_Enemy1_3
-    21300008: 15_Sprite_Red_Enemy1_4
-    21300010: 15_Sprite_Red_Enemy1_5
-    21300012: 15_Sprite_Red_Enemy1_6
-    21300014: 15_Sprite_Red_Enemy1_7
-    21300016: 15_Sprite_Red_Enemy1_8
-    21300018: 15_Sprite_Red_Enemy1_9
-    21300020: 15_Sprite_Red_Enemy1_10
-    21300022: 15_Sprite_Red_Enemy1_11
-    21300024: 15_Sprite_Red_Enemy1_12
-    21300026: 15_Sprite_Red_Enemy1_13
-    21300028: 15_Sprite_Red_Enemy1_14
-    21300030: 15_Sprite_Red_Enemy1_15
-    21300032: 15_Sprite_Red_Enemy1_16
-    21300034: 15_Sprite_Red_Enemy1_17
-    21300036: 15_Sprite_Red_Enemy1_18
-    21300038: 15_Sprite_Red_Enemy1_19
-    21300040: 15_Sprite_Red_Enemy1_20
-    21300042: 15_Sprite_Red_Enemy1_21
-    21300044: 15_Sprite_Red_Enemy1_22
-    21300046: 15_Sprite_Red_Enemy1_23
-    21300048: 15_Sprite_Red_Enemy1_24
-    21300050: 15_Sprite_Red_Enemy1_25
+    21300000: Bearson right old weapon_0
+    21300002: Bearson right old weapon_1
+    21300004: Bearson right old weapon_2
+    21300006: Bearson right old weapon_3
+    21300008: Bearson right old weapon_4
+    21300010: Bearson right old weapon_5
+    21300012: Bearson right old weapon_6
+    21300014: Bearson right old weapon_7
+    21300016: Bearson right old weapon_8
+    21300018: Bearson right old weapon_9
+    21300020: Bearson right old weapon_10
+    21300022: Bearson right old weapon_11
+    21300024: Bearson right old weapon_12
+    21300026: Bearson right old weapon_13
+    21300028: Bearson right old weapon_14
+    21300030: Bearson right old weapon_15
+    21300032: Bearson right old weapon_16
+    21300034: Bearson right old weapon_17
+    21300036: Bearson right old weapon_18
+    21300038: Bearson right old weapon_19
+    21300040: Bearson right old weapon_20
+    21300042: Bearson right old weapon_21
+    21300044: Bearson right old weapon_22
+    21300046: Bearson right old weapon_23
+    21300048: Bearson right old weapon_24
+    21300050: Bearson right old weapon_25
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -69,263 +69,263 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: 15_Sprite_Red_Enemy1_0
+    - name: Bearson right old weapon_0
       rect:
         serializedVersion: 2
         x: 12
         y: 0
-        width: 25
-        height: 45
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_1
+    - name: Bearson right old weapon_1
       rect:
         serializedVersion: 2
         x: 87
         y: 0
-        width: 24
-        height: 45
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_2
+    - name: Bearson right old weapon_2
       rect:
         serializedVersion: 2
-        x: 161
+        x: 162
         y: 0
-        width: 25
-        height: 45
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_3
+    - name: Bearson right old weapon_3
       rect:
         serializedVersion: 2
         x: 237
         y: 0
-        width: 27
-        height: 45
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_4
+    - name: Bearson right old weapon_4
       rect:
         serializedVersion: 2
-        x: 311
+        x: 312
         y: 0
-        width: 27
-        height: 45
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_5
+    - name: Bearson right old weapon_5
       rect:
         serializedVersion: 2
-        x: 386
+        x: 387
         y: 0
-        width: 28
-        height: 45
+        width: 26
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_6
+    - name: Bearson right old weapon_6
       rect:
         serializedVersion: 2
         x: 462
         y: 0
-        width: 25
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bearson right old weapon_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bearson right old weapon_8
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 0
+        width: 44
         height: 45
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_7
+    - name: Bearson right old weapon_9
       rect:
         serializedVersion: 2
-        x: 536
+        x: 682
         y: 0
-        width: 27
-        height: 45
+        width: 42
+        height: 50
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_8
+    - name: Bearson right old weapon_10
       rect:
         serializedVersion: 2
-        x: 612
+        x: 759
         y: 0
-        width: 25
-        height: 45
+        width: 54
+        height: 46
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_9
+    - name: Bearson right old weapon_11
       rect:
         serializedVersion: 2
-        x: 687
+        x: 834
         y: 0
-        width: 24
-        height: 43
+        width: 57
+        height: 46
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_10
+    - name: Bearson right old weapon_12
       rect:
         serializedVersion: 2
-        x: 761
+        x: 909
         y: 0
-        width: 25
-        height: 41
+        width: 54
+        height: 46
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_11
+    - name: Bearson right old weapon_13
       rect:
         serializedVersion: 2
-        x: 837
-        y: 7
-        width: 25
-        height: 43
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_12
-      rect:
-        serializedVersion: 2
-        x: 911
+        x: 981
         y: 0
-        width: 25
-        height: 41
+        width: 32
+        height: 49
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_13
+    - name: Bearson right old weapon_14
       rect:
         serializedVersion: 2
-        x: 987
+        x: 1061
         y: 0
-        width: 25
-        height: 43
+        width: 28
+        height: 50
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_14
-      rect:
-        serializedVersion: 2
-        x: 1062
-        y: 0
-        width: 24
-        height: 45
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_15
+    - name: Bearson right old weapon_15
       rect:
         serializedVersion: 2
         x: 1136
         y: 0
-        width: 25
-        height: 45
+        width: 46
+        height: 47
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_16
+    - name: Bearson right old weapon_16
       rect:
         serializedVersion: 2
-        x: 1212
+        x: 1211
         y: 0
-        width: 25
-        height: 45
+        width: 50
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_17
+    - name: Bearson right old weapon_17
       rect:
         serializedVersion: 2
         x: 1286
         y: 0
-        width: 27
-        height: 45
+        width: 48
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_18
+    - name: Bearson right old weapon_18
       rect:
         serializedVersion: 2
         x: 1361
         y: 0
-        width: 26
-        height: 45
+        width: 28
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_19
+    - name: Bearson right old weapon_19
       rect:
         serializedVersion: 2
-        x: 1437
+        x: 1436
         y: 0
-        width: 23
-        height: 45
+        width: 28
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_20
+    - name: Bearson right old weapon_20
       rect:
         serializedVersion: 2
-        x: 1511
+        x: 1512
         y: 0
-        width: 25
-        height: 45
+        width: 27
+        height: 40
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_21
+    - name: Bearson right old weapon_21
       rect:
         serializedVersion: 2
         x: 1587
-        y: 0
-        width: 23
-        height: 45
+        y: 6
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_22
+    - name: Bearson right old weapon_22
       rect:
         serializedVersion: 2
         x: 1662
         y: 0
-        width: 26
-        height: 45
+        width: 27
+        height: 40
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_23
+    - name: Bearson right old weapon_23
       rect:
         serializedVersion: 2
-        x: 1734
+        x: 1737
         y: 0
-        width: 35
-        height: 45
+        width: 27
+        height: 42
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_24
+    - name: Bearson right old weapon_24
       rect:
         serializedVersion: 2
         x: 1812
         y: 0
-        width: 25
-        height: 45
+        width: 27
+        height: 44
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15_Sprite_Red_Enemy1_25
+    - name: Bearson right old weapon_25
       rect:
         serializedVersion: 2
-        x: 1886
+        x: 1590
         y: 0
-        width: 25
-        height: 45
+        width: 22
+        height: 5
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

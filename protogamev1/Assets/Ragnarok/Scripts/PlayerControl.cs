@@ -12,11 +12,11 @@ public class PlayerControl : MonoBehaviour
 	public float inAirDamping = 5f;
 	public float jumpHeight = 3f;
 	public float AttackRadius = 0.3f;
-	public bool isAttacking = false;
-	public bool hasSword = true;
-	public bool hasStaff = false;
-	public int health = 5;
-	public int Weapon = 2;
+	private bool isAttacking = false;
+	private bool hasSword = true;
+	private bool hasMace = false;
+	private int health = 5;
+	private int Weapon = 1;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 	private CharacterController2D _controller;
@@ -24,7 +24,7 @@ public class PlayerControl : MonoBehaviour
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 	private bool isDead = false;
-	float swingtime = .28f;
+	private float swingtime = .28f;
 	private AudioSource[] sounds;
 
 
@@ -69,8 +69,7 @@ public class PlayerControl : MonoBehaviour
 		} else if (col.gameObject.tag == "Emerald") {
 			sounds [2].Play ();
 			Destroy (col.gameObject);
-		}
-		else if (col.gameObject.tag == "GodRune") {
+		} else if (col.gameObject.tag == "GodRune") {
 			sounds [3].Play ();
 			Destroy (col.gameObject);
 			col.GetComponent<RuneEffect> ().ApplyRune ();
@@ -86,11 +85,15 @@ public class PlayerControl : MonoBehaviour
 		} else if (col.gameObject.tag == "PowerRune") {
 			sounds [3].Play ();
 			Destroy (col.gameObject);
-		} else if (col.gameObject.tag == "Sword") {
-			this.hasSword = true;
-			this.Weapon = 2;
 		} else if (col.gameObject.tag == "Respawn") {
 			health = 0;
+		} else if (col.gameObject.tag == "Sword") {
+			if (!hasSword)
+			{
+				hasSword = true;
+			}
+			Weapon = 2;
+			Destroy (col.gameObject);
 		}
 
 	}
@@ -113,29 +116,36 @@ public class PlayerControl : MonoBehaviour
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 		
-		if (Input.GetKey (KeyCode.RightArrow)) {
+		if (Input.GetKey (KeyCode.RightArrow)) 
+		{
 			normalizedHorizontalSpeed = 1;
 			if (transform.localScale.x < 0f)
 				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 			
 			if (_controller.isGrounded)
 				_animator.Play (Animator.StringToHash ("Run"));
-		} else if (Input.GetKey (KeyCode.LeftArrow)) {
+		} 
+		else if (Input.GetKey (KeyCode.LeftArrow)) 
+		{
 			normalizedHorizontalSpeed = -1;
 			if (transform.localScale.x > 0f)
 				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 			
 			if (_controller.isGrounded)
 				_animator.Play (Animator.StringToHash ("Run"));
-		} else if (Input.GetKey (KeyCode.Z)) 
+		} 
+		else if (Input.GetKey (KeyCode.Z)) 
 		{
-			Debug.Log (hasSword + " " + Weapon);
 			normalizedHorizontalSpeed = 0;
 			if (_controller.isGrounded)
 			{
 				if (hasSword && Weapon == 2)
 				{
 					_animator.Play( Animator.StringToHash( "SwordAttack" ) );
+				}
+				else if (hasMace && Weapon == 3)
+				{
+					_animator.Play( Animator.StringToHash( "MaceAttack" ) );
 				}
 				else
 				{
@@ -164,10 +174,12 @@ public class PlayerControl : MonoBehaviour
 					{
 						if (e.GetComponent<BarrelScript>().CheckDamage() >= e.GetComponent<BarrelScript>().maxHealth)
 						{
+							sounds[4].Play ();
 							Destroy(e.gameObject);
 						}
 						else
 						{
+							sounds[5].Play ();
 							e.GetComponent<BarrelScript>().TakeDamage(1);
 						}
 					}
@@ -175,10 +187,12 @@ public class PlayerControl : MonoBehaviour
 					{
 						if (e.GetComponent<CrateScript>().CheckDamage() >= e.GetComponent<CrateScript>().maxHealth)
 						{
+							sounds[4].Play ();
 							Destroy(e.gameObject);
 						}
 						else
 						{
+							sounds[5].Play ();
 							e.GetComponent<CrateScript>().TakeDamage(1);
 						}
 
@@ -195,6 +209,7 @@ public class PlayerControl : MonoBehaviour
 					{
 						if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
 						{
+							sounds[5].Play ();
 							e.GetComponent<RedEnemyAI>().TakeDamage (34.00);
 						}
 						else if (e.GetComponent<RedEnemyAI>().checkDead())
@@ -208,6 +223,44 @@ public class PlayerControl : MonoBehaviour
 			}
 		
 		}
+		else if (Input.GetKeyDown(KeyCode.UpArrow))
+		{
+			if (Weapon == 1 && hasSword)
+			{
+				Weapon = 2;
+			}
+			else if (Weapon == 2 && hasMace)
+			{
+				Weapon = 3;
+			}
+			else if (Weapon == 2 && !hasMace)
+			{
+				Weapon = 1;
+			}
+			else if (Weapon == 3)
+			{
+				Weapon = 1;
+			}
+		}
+		else if (Input.GetKeyDown(KeyCode.DownArrow))
+		{
+			if (Weapon == 1 && hasMace)
+			{
+				Weapon = 3;
+			}
+			else if (Weapon == 1 && !hasMace && hasSword)
+			{
+				Weapon = 2;
+			}
+			else if (Weapon == 2)
+			{
+				Weapon = 1;
+			}
+			else if (Weapon == 3)
+			{
+				Weapon = 2;
+			}
+		}
 		else
 		{
 			normalizedHorizontalSpeed = 0;
@@ -219,11 +272,6 @@ public class PlayerControl : MonoBehaviour
 		}
 
 
-		/*if (Input.GetKeyUp (KeyCode.Z)) {
-			isAttacking = false;
-			Debug.Log( "Stopped Attacking");
-		}*/
-		
 		// we can only jump whilst grounded
 		if( _controller.isGrounded && Input.GetKeyDown( KeyCode.Space ) )
 		{

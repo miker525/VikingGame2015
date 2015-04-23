@@ -8,6 +8,9 @@
 	1: Coin collect sound
 	2: Gem collect sound
 	3: Rune collect sound
+	4: wood destruction sound
+	5: enemy / wood hit sound
+	6: player hit sound
 
 
 */

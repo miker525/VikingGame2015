@@ -32,6 +32,7 @@ public class RedEnemyAI : MonoBehaviour {
 	private float hurtTimer = .40f;
 	private float dmgtime = 2.5f;
 	private bool isFlashing = false;
+	private float swingtime = .75f;
 
 	void Awake()
 	{
@@ -152,7 +153,7 @@ public class RedEnemyAI : MonoBehaviour {
 	
 	#endregion
 	
-	
+
 	// the Update loop contains a very simple example of moving the character around and controlling the animation
 	void Update()
 	{
@@ -194,37 +195,60 @@ public class RedEnemyAI : MonoBehaviour {
 
 		if (isAttacking) 
 		{
-			if (Weapon == 1)
+			if (Weapon == 1) 
 			{
-				animatorz.Play(Animator.StringToHash ("AxeAttack"));
-			}
-			else if (Weapon == 2)
+				animatorz.Play (Animator.StringToHash ("AxeAttack"));
+				if (swingtime > 0) 
+				{
+					swingtime -= Time.deltaTime;
+				} 
+				else if (swingtime <= 0) 
+				{
+
+					swingtime = .75f;
+					isAttacking = false;
+				}
+			} 
+			else if (Weapon == 2) 
 			{
 				animatorz.Play (Animator.StringToHash ("SwordAttack"));
+				if (swingtime > 0) 
+				{
+					swingtime-= Time.unscaledDeltaTime;
+				} 
+				else if (swingtime <= 0) 
+				{
+					
+					swingtime = .75f;
+					isAttacking = false;
+				}
 			}
-		}
-
-		//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
-		if (distance < maxSqrDistance && distance > .18 && !isHurt) {
-			MoveTo (dir);
-			if (originReturnTimer != 3.5f) {
-				originReturnTimer = 3.5f;
-			}
-		} else if (distance <= .20 && !isHurt) {
-			isAttacking = true;
-		}
-		else 
+		} 
+		else if (!isAttacking) 
 		{
-			if (transform.position.x <= Origin.x-.02 || transform.position.x >= Origin.x+.02)
+			//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
+			if (distance < maxSqrDistance && distance > .18 && !isHurt) 
 			{
-
-				returnToOrigin (Origin);
+				MoveTo (dir);
+				if (originReturnTimer != 3.5f) {
+					originReturnTimer = 3.5f;
+				}
+			} else if (distance <= .20 && !isHurt) {
+				isAttacking = true;
 			}
 			else 
 			{
-				animatorz.Play (Animator.StringToHash ("Idle"));
+				if (transform.position.x <= Origin.x-.02 || transform.position.x >= Origin.x+.02)
+				{
+					returnToOrigin (Origin);
+				}
+				else 
+				{
+					animatorz.Play (Animator.StringToHash ("Idle"));
+				}
 			}
 		}
+
 		
 		// apply horizontal speed smoothing it
 		//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
@@ -234,6 +258,7 @@ public class RedEnemyAI : MonoBehaviour {
 		// apply gravity before moving
 		_velocity.y += gravity * Time.deltaTime;
 		_controller.move( _velocity * Time.deltaTime );
+
 	}
 	
 }

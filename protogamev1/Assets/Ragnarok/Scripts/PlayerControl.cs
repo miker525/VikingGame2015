@@ -13,7 +13,7 @@ public class PlayerControl : MonoBehaviour
 	public float jumpHeight = 3f;
 	public float AttackRadius = 0.3f;
 	private bool isAttacking = false;
-	private bool hasSword = true;
+	private bool hasSword = false;
 	private bool hasMace = false;
 	private int health = 5;
 	private int Weapon = 1;

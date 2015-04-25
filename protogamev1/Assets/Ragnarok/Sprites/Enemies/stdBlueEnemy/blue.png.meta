@@ -1,42 +1,42 @@
 fileFormatVersion: 2
-guid: f05eb0eee654ac7418f63bedce24b268
+guid: e3a3003b8d43af44cb534f08c5193dac
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemy_0
-    21300002: enemy_1
-    21300004: enemy_2
-    21300006: enemy_3
-    21300008: enemy_4
-    21300010: enemy_5
-    21300012: enemy_6
-    21300014: enemy_7
-    21300016: enemy_8
-    21300018: enemy_9
-    21300020: enemy_10
-    21300022: enemy_11
-    21300024: enemy_12
-    21300026: enemy_13
-    21300028: enemy_14
-    21300030: enemy_15
-    21300032: enemy_16
-    21300034: enemy_17
-    21300036: enemy_18
-    21300038: enemy_19
-    21300040: enemy_20
-    21300042: enemy_21
-    21300044: enemy_22
-    21300046: enemy_23
-    21300048: enemy_24
-    21300050: enemy_25
-    21300052: enemy_26
-    21300054: enemy_27
-    21300056: enemy_28
-    21300058: enemy_29
-    21300060: enemy_30
-    21300062: enemy_31
-    21300064: enemy_32
-    21300066: enemy_33
-    21300068: enemy_34
+    21300000: blue_0
+    21300002: blue_1
+    21300004: blue_2
+    21300006: blue_3
+    21300008: blue_4
+    21300010: blue_5
+    21300012: blue_6
+    21300014: blue_7
+    21300016: blue_8
+    21300018: blue_9
+    21300020: blue_10
+    21300022: blue_11
+    21300024: blue_12
+    21300026: blue_13
+    21300028: blue_14
+    21300030: blue_15
+    21300032: blue_16
+    21300034: blue_17
+    21300036: blue_18
+    21300038: blue_19
+    21300040: blue_20
+    21300042: blue_21
+    21300044: blue_22
+    21300046: blue_23
+    21300048: blue_24
+    21300050: blue_25
+    21300052: blue_26
+    21300054: blue_27
+    21300056: blue_28
+    21300058: blue_29
+    21300060: blue_30
+    21300062: blue_31
+    21300064: blue_32
+    21300066: blue_33
+    21300068: blue_34
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -78,7 +78,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: enemy_0
+    - name: blue_0
       rect:
         serializedVersion: 2
         x: 12
@@ -88,7 +88,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_1
+    - name: blue_1
       rect:
         serializedVersion: 2
         x: 86
@@ -98,7 +98,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_2
+    - name: blue_2
       rect:
         serializedVersion: 2
         x: 160
@@ -108,7 +108,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_3
+    - name: blue_3
       rect:
         serializedVersion: 2
         x: 237
@@ -118,7 +118,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_4
+    - name: blue_4
       rect:
         serializedVersion: 2
         x: 311
@@ -128,7 +128,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_5
+    - name: blue_5
       rect:
         serializedVersion: 2
         x: 386
@@ -138,7 +138,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_6
+    - name: blue_6
       rect:
         serializedVersion: 2
         x: 460
@@ -148,7 +148,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_7
+    - name: blue_7
       rect:
         serializedVersion: 2
         x: 537
@@ -158,7 +158,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_8
+    - name: blue_8
       rect:
         serializedVersion: 2
         x: 611
@@ -168,7 +168,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_9
+    - name: blue_9
       rect:
         serializedVersion: 2
         x: 686
@@ -178,7 +178,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_10
+    - name: blue_10
       rect:
         serializedVersion: 2
         x: 760
@@ -188,7 +188,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_11
+    - name: blue_11
       rect:
         serializedVersion: 2
         x: 834
@@ -198,7 +198,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_12
+    - name: blue_12
       rect:
         serializedVersion: 2
         x: 911
@@ -208,7 +208,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_13
+    - name: blue_13
       rect:
         serializedVersion: 2
         x: 986
@@ -218,7 +218,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_14
+    - name: blue_14
       rect:
         serializedVersion: 2
         x: 1060
@@ -228,7 +228,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_15
+    - name: blue_15
       rect:
         serializedVersion: 2
         x: 1137
@@ -238,7 +238,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_16
+    - name: blue_16
       rect:
         serializedVersion: 2
         x: 1211
@@ -248,7 +248,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_17
+    - name: blue_17
       rect:
         serializedVersion: 2
         x: 1286
@@ -258,7 +258,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_18
+    - name: blue_18
       rect:
         serializedVersion: 2
         x: 1357
@@ -268,7 +268,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_19
+    - name: blue_19
       rect:
         serializedVersion: 2
         x: 1437
@@ -278,7 +278,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_20
+    - name: blue_20
       rect:
         serializedVersion: 2
         x: 1511
@@ -288,7 +288,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_21
+    - name: blue_21
       rect:
         serializedVersion: 2
         x: 1586
@@ -298,7 +298,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_22
+    - name: blue_22
       rect:
         serializedVersion: 2
         x: 1662
@@ -308,7 +308,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_23
+    - name: blue_23
       rect:
         serializedVersion: 2
         x: 1737
@@ -318,7 +318,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_24
+    - name: blue_24
       rect:
         serializedVersion: 2
         x: 1806
@@ -328,7 +328,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_25
+    - name: blue_25
       rect:
         serializedVersion: 2
         x: 1885
@@ -338,7 +338,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_26
+    - name: blue_26
       rect:
         serializedVersion: 2
         x: 1962
@@ -348,7 +348,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_27
+    - name: blue_27
       rect:
         serializedVersion: 2
         x: 2037
@@ -358,7 +358,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_28
+    - name: blue_28
       rect:
         serializedVersion: 2
         x: 2111
@@ -368,7 +368,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_29
+    - name: blue_29
       rect:
         serializedVersion: 2
         x: 2185
@@ -378,7 +378,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_30
+    - name: blue_30
       rect:
         serializedVersion: 2
         x: 2255
@@ -388,7 +388,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_31
+    - name: blue_31
       rect:
         serializedVersion: 2
         x: 2337
@@ -398,7 +398,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_32
+    - name: blue_32
       rect:
         serializedVersion: 2
         x: 2411
@@ -408,7 +408,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_33
+    - name: blue_33
       rect:
         serializedVersion: 2
         x: 2485
@@ -418,7 +418,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: enemy_34
+    - name: blue_34
       rect:
         serializedVersion: 2
         x: 2562

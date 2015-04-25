@@ -5,7 +5,7 @@ public class RedEnemyAI : MonoBehaviour {
 	// movement config
 	public GameObject target;
 	public double health = 100.00;
-	
+	public int Weapon = 1;
 	[HideInInspector]
 	private static GameObject WalkedOverObject;
 	private float normalizedHorizontalSpeed = 0;
@@ -174,6 +174,7 @@ public class RedEnemyAI : MonoBehaviour {
 		
 		if (isHurt) 
 		{
+			isAttacking = false;
 			if (!isFlashing)
 			{
 				StartCoroutine(Flash ());
@@ -191,15 +192,27 @@ public class RedEnemyAI : MonoBehaviour {
 			}
 		}
 
-		//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
-		if (distance < maxSqrDistance && distance > .18 && !isHurt) 
+		if (isAttacking) 
 		{
-			MoveTo (dir);
-			if (originReturnTimer != 3.5f)
+			if (Weapon == 1)
 			{
+				animatorz.Play(Animator.StringToHash ("AxeAttack"));
+			}
+			else if (Weapon == 2)
+			{
+				animatorz.Play (Animator.StringToHash ("SwordAttack"));
+			}
+		}
+
+		//var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
+		if (distance < maxSqrDistance && distance > .18 && !isHurt) {
+			MoveTo (dir);
+			if (originReturnTimer != 3.5f) {
 				originReturnTimer = 3.5f;
 			}
-		} 
+		} else if (distance <= .20 && !isHurt) {
+			isAttacking = true;
+		}
 		else 
 		{
 			if (transform.position.x <= Origin.x-.02 || transform.position.x >= Origin.x+.02)

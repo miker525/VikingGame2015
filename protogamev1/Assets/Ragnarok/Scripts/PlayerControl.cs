@@ -24,6 +24,7 @@ public class PlayerControl : MonoBehaviour
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 	private bool isDead = false;
+	private bool isHurt = false;
 	private float swingtime = .28f;
 	private AudioSource[] sounds;
 

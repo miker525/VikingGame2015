@@ -67,202 +67,202 @@ TextureImporter:
     - name: Bearson right sheet (2)_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 13
         y: 0
-        width: 27
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_1
       rect:
         serializedVersion: 2
-        x: 87
+        x: 88
         y: 0
-        width: 27
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_2
       rect:
         serializedVersion: 2
-        x: 162
+        x: 163
         y: 0
-        width: 26
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_3
       rect:
         serializedVersion: 2
-        x: 237
+        x: 238
         y: 0
-        width: 26
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_4
       rect:
         serializedVersion: 2
-        x: 311
+        x: 313
         y: 0
-        width: 27
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_5
       rect:
         serializedVersion: 2
-        x: 387
+        x: 388
         y: 0
-        width: 27
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_6
       rect:
         serializedVersion: 2
-        x: 462
+        x: 463
         y: 0
-        width: 27
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_7
       rect:
         serializedVersion: 2
-        x: 537
+        x: 538
         y: 0
-        width: 26
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_8
       rect:
         serializedVersion: 2
-        x: 606
+        x: 607
         y: 0
-        width: 32
-        height: 48
+        width: 30
+        height: 47
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_9
       rect:
         serializedVersion: 2
-        x: 686
+        x: 688
         y: 0
-        width: 28
-        height: 50
+        width: 25
+        height: 49
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_10
       rect:
         serializedVersion: 2
-        x: 762
+        x: 763
         y: 0
-        width: 53
-        height: 47
+        width: 42
+        height: 45
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_11
       rect:
         serializedVersion: 2
-        x: 837
+        x: 838
         y: 0
-        width: 55
-        height: 43
+        width: 47
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_12
       rect:
         serializedVersion: 2
-        x: 912
+        x: 913
         y: 0
-        width: 52
+        width: 45
         height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_13
       rect:
         serializedVersion: 2
-        x: 987
+        x: 988
         y: 0
-        width: 26
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_14
       rect:
         serializedVersion: 2
-        x: 1061
+        x: 1063
         y: 0
-        width: 27
-        height: 42
+        width: 24
+        height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_15
       rect:
         serializedVersion: 2
-        x: 1137
+        x: 1138
         y: 0
-        width: 27
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_16
       rect:
         serializedVersion: 2
-        x: 1211
+        x: 1213
         y: 0
-        width: 29
-        height: 50
+        width: 24
+        height: 49
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_17
       rect:
         serializedVersion: 2
-        x: 1287
+        x: 1288
         y: 0
-        width: 26
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_18
       rect:
         serializedVersion: 2
-        x: 1362
+        x: 1363
         y: 0
-        width: 26
-        height: 42
+        width: 24
+        height: 41
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bearson right sheet (2)_19
       rect:
         serializedVersion: 2
-        x: 1436
+        x: 1438
         y: 0
-        width: 27
-        height: 43
+        width: 24
+        height: 42
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

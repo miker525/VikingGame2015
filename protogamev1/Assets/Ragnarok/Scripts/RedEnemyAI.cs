@@ -165,14 +165,7 @@ public class RedEnemyAI : MonoBehaviour {
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 
-		/*if (isDead) 
-		{
-			if(gameObject.tag == "Enemy")
-			{
-				Destroy(this.gameObject);
-			}
-		}*/
-		
+		//Debug.Log (dir.normalized.x);
 		if (isHurt) {
 			isAttacking = false;
 			if (!isFlashing) {
@@ -210,16 +203,32 @@ public class RedEnemyAI : MonoBehaviour {
 						GameObject e = overlappedThings[i].gameObject;
 						if (e.tag == "Player")
 						{
-							if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
+							if (dir.normalized.x < 0) //LEFT of ENEMY
 							{
-								//sounds[5].Play ();
-								e.GetComponent<PlayerControl>().TakeDamage (2);
+								if (!isFacingRight)
+								{
+									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
+									{
+										//sounds[5].Play ();
+										e.GetComponent<PlayerControl>().TakeDamage (2);
+									}
+								}
 							}
+							else if (dir.normalized.x > 0) // Right of enemy
+							{
+								if (isFacingRight)
+								{
+									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
+									{
+										//sounds[5].Play ();
+										e.GetComponent<PlayerControl>().TakeDamage (2);
+									}
+								}
+							}
+
 
 						}
 					}
-
-
 					swingtime = .75f;
 					isAttacking = false;
 				}
@@ -234,6 +243,39 @@ public class RedEnemyAI : MonoBehaviour {
 				else if (swingtime <= 0) 
 				{
 					
+					int playerLayerMask = 1 << LayerMask.NameToLayer("Player");
+					Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, 0.25f, playerLayerMask);
+					for (int i=0;i<overlappedThings.Length;i++)
+					{
+						GameObject e = overlappedThings[i].gameObject;
+						if (e.tag == "Player")
+						{
+							if (dir.normalized.x < 0) //LEFT of ENEMY
+							{
+								if (!isFacingRight)
+								{
+									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
+									{
+										//sounds[5].Play ();
+										e.GetComponent<PlayerControl>().TakeDamage (2);
+									}
+								}
+							}
+							else if (dir.normalized.x > 0) // Right of enemy
+							{
+								if (isFacingRight)
+								{
+									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
+									{
+										//sounds[5].Play ();
+										e.GetComponent<PlayerControl>().TakeDamage (2);
+									}
+								}
+							}
+							
+							
+						}
+					}
 					swingtime = .75f;
 					isAttacking = false;
 				}

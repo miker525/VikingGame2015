@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ragnarok\Scripts\PlayerControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ragnarok\Scripts\RedEnemyAI.cs">
     <Files>
-      <File FileName="Assets\Ragnarok\Scripts\PlayerControl.cs" Line="235" Column="96" />
-      <File FileName="Assets\Ragnarok\Scripts\RedEnemyAI.cs" Line="207" Column="89" />
+      <File FileName="Assets\Ragnarok\Scripts\PlayerControl.cs" Line="271" Column="7" />
+      <File FileName="Assets\Ragnarok\Scripts\RedEnemyAI.cs" Line="187" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

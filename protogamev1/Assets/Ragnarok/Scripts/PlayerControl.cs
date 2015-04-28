@@ -26,6 +26,7 @@ public class PlayerControl : MonoBehaviour
 	private bool isDead = false;
 	private bool isHurt = false;
 	private bool isFlashing = false;
+	private bool isFacingRight = true;
 	private float swingtime = .28f;
 	private float dmgtime = 2.5f;
 	private AudioSource[] sounds;
@@ -55,6 +56,7 @@ public class PlayerControl : MonoBehaviour
 		//Debug.Log( "flags: " + _controller.collisionState + ", hit.normal: " + hit.normal );
 	}
 	
+
 	//WALK INTO EVENTS
 	void onTriggerEnterEvent( Collider2D col )
 	{
@@ -187,6 +189,7 @@ public class PlayerControl : MonoBehaviour
 		if (Input.GetKey (KeyCode.RightArrow)) 
 		{
 			normalizedHorizontalSpeed = 1;
+			isFacingRight = true;
 			if (transform.localScale.x < 0f)
 				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 			
@@ -196,6 +199,7 @@ public class PlayerControl : MonoBehaviour
 		else if (Input.GetKey (KeyCode.LeftArrow)) 
 		{
 			normalizedHorizontalSpeed = -1;
+			isFacingRight = false;
 			if (transform.localScale.x > 0f)
 				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 			
@@ -271,6 +275,7 @@ public class PlayerControl : MonoBehaviour
 				Collider2D[] overlappedEnemies = Physics2D.OverlapCircleAll(transform.position, AttackRadius, enemyLayerMask);
 				for (int i=0;i<overlappedEnemies.Length;i++)
 				{
+
 					GameObject e = overlappedEnemies[i].gameObject;
 					//Debug.Log (e.tag);
 					if (e.tag == "Enemy")

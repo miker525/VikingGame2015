@@ -4,7 +4,7 @@ using System.Collections;
 public class RedEnemyAI : MonoBehaviour {
 	// movement config
 	public GameObject target;
-	public double health = 100.00;
+	public int health = 5;
 	public int Weapon = 1;
 	[HideInInspector]
 	private static GameObject WalkedOverObject;
@@ -54,7 +54,7 @@ public class RedEnemyAI : MonoBehaviour {
 		transform.localScale = theScale;
 	}
 	
-	public void TakeDamage(double dmgamt)
+	public void TakeDamage(int dmgamt)
 	{
 		if (health - dmgamt <= 0) 
 		{
@@ -173,24 +173,23 @@ public class RedEnemyAI : MonoBehaviour {
 			}
 		}*/
 		
-		if (isHurt) 
-		{
+		if (isHurt) {
 			isAttacking = false;
-			if (!isFlashing)
-			{
-				StartCoroutine(Flash ());
+			if (!isFlashing) {
+				StartCoroutine (Flash ());
 			}
-			if (dmgtime > 0)
-			{
+			if (dmgtime > 0) {
 				Debug.Log ("POP");
-				Retreat(dir);
+				Retreat (dir);
 				dmgtime -= Time.deltaTime;
 			}
-			if (dmgtime < 0)
-			{
+			if (dmgtime < 0) {
 				isHurt = false;
 				Debug.Log ("SAFE");
 			}
+		} else {
+			isHurt = false;
+			isFlashing = false;
 		}
 
 		if (isAttacking) 
@@ -204,6 +203,22 @@ public class RedEnemyAI : MonoBehaviour {
 				} 
 				else if (swingtime <= 0) 
 				{
+					int playerLayerMask = 1 << LayerMask.NameToLayer("Player");
+					Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, 0.25f, playerLayerMask);
+					for (int i=0;i<overlappedThings.Length;i++)
+					{
+						GameObject e = overlappedThings[i].gameObject;
+						if (e.tag == "Player")
+						{
+							if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
+							{
+								//sounds[5].Play ();
+								e.GetComponent<PlayerControl>().TakeDamage (2);
+							}
+
+						}
+					}
+
 
 					swingtime = .75f;
 					isAttacking = false;

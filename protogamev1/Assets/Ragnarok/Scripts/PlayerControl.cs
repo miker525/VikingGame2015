@@ -25,7 +25,9 @@ public class PlayerControl : MonoBehaviour
 	private Vector3 _velocity;
 	private bool isDead = false;
 	private bool isHurt = false;
+	private bool isFlashing = false;
 	private float swingtime = .28f;
+	private float dmgtime = 2.5f;
 	private AudioSource[] sounds;
 
 
@@ -107,7 +109,48 @@ public class PlayerControl : MonoBehaviour
 	
 	#endregion
 	
+	public void TakeDamage(int dmgamt)
+	{
+		if (health - dmgamt <= 0) 
+		{
+			isDead = true;
+		} 
+		else 
+		{
+			health -= dmgamt;
+			isHurt = true;
+		}
+	}
+	public void Kill()
+	{
+		isDead = true;
+	}
+	public bool checkHurt()
+	{
+		return isHurt;
+	}
 	
+	public bool checkDead()
+	{
+		return isDead;
+	}
+
+	IEnumerator Flash()
+	{
+		isFlashing = true;
+		for(var n = 0; n < 10; n++)
+		{
+			renderer.enabled = true;
+			yield return new WaitForSeconds(0.1f);
+			renderer.enabled = false;
+			yield return new WaitForSeconds(0.1f);
+		}
+		renderer.enabled = true;
+	}
+
+
+
+
 	// the Update loop contains a very simple example of moving the character around and controlling the animation
 	void Update()
 	{
@@ -116,6 +159,30 @@ public class PlayerControl : MonoBehaviour
 		
 		if( _controller.isGrounded )
 			_velocity.y = 0;
+
+		if (isHurt) 
+		{
+			isAttacking = false;
+			if (!isFlashing) {
+				StartCoroutine (Flash ());
+			}
+			if (dmgtime > 0) 
+			{
+				dmgtime -= Time.deltaTime;
+			}
+			if (dmgtime < 0) 
+			{
+				isHurt = false;
+			}
+		} 
+		else 
+		{
+			isHurt = false;
+			isFlashing = false;
+		}
+
+
+
 		
 		if (Input.GetKey (KeyCode.RightArrow)) 
 		{
@@ -165,7 +232,7 @@ public class PlayerControl : MonoBehaviour
 			else if (swingtime <= 0) 
 			{
 				/* Checking For Objects */
-				Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, 0.3f, environmentLayerMask);
+				Collider2D[] overlappedThings = Physics2D.OverlapCircleAll(transform.position, AttackRadius, environmentLayerMask);
 				for (int i=0;i<overlappedThings.Length;i++)
 				{
 					GameObject e = overlappedThings[i].gameObject;
@@ -211,7 +278,7 @@ public class PlayerControl : MonoBehaviour
 						if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
 						{
 							sounds[5].Play ();
-							e.GetComponent<RedEnemyAI>().TakeDamage (34.00);
+							e.GetComponent<RedEnemyAI>().TakeDamage (2);
 						}
 						else if (e.GetComponent<RedEnemyAI>().checkDead())
 						{

@@ -17,6 +17,7 @@ public class PlayerControl : MonoBehaviour
 	private bool hasMace = false;
 	private int health = 5;
 	private int Weapon = 1;
+	public int CurrentLevel = 1;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 	private CharacterController2D _controller;
@@ -31,7 +32,6 @@ public class PlayerControl : MonoBehaviour
 	private float dmgtime = 2.5f;
 	private AudioSource[] sounds;
 
-
 	void Awake()
 	{
 		_animator = GetComponent<Animator>();
@@ -41,11 +41,12 @@ public class PlayerControl : MonoBehaviour
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
 		sounds = GetComponents<AudioSource> ();
+		//GameObject bg = GameObject.FindGameObjectWithTag ("Background");
 	}
 	
 	
 	#region Event Listeners
-	
+
 	void onControllerCollider( RaycastHit2D hit )
 	{
 		// bail out on plain old ground hits cause they arent very interesting
@@ -92,6 +93,17 @@ public class PlayerControl : MonoBehaviour
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "Respawn") {
 			health = 0;
+		} else if (col.gameObject.tag == "NextLevel") 
+		{
+			if (CurrentLevel == 1)
+			{
+				CurrentLevel++;
+				Application.LoadLevel("TestScene");
+			}
+			else if (CurrentLevel == 2)
+			{
+				//NextLevel
+			}
 		} else if (col.gameObject.tag == "Sword") {
 			if (!hasSword)
 			{
@@ -149,7 +161,25 @@ public class PlayerControl : MonoBehaviour
 		}
 		renderer.enabled = true;
 	}
-
+	GameObject GetClosestObject(string tag)
+	{
+		GameObject[] objects = GameObject.FindGameObjectsWithTag (tag);
+		GameObject nearestObject = new GameObject();
+		for (int i=0;i<objects.Length;i++)
+		{
+			GameObject e = objects[i];
+			if (!nearestObject)
+			{
+				nearestObject = e;
+			}
+			
+			if (Vector3.Distance(transform.position, e.transform.position) <= Vector3.Distance(transform.position, nearestObject.transform.position))
+			{
+				nearestObject = e;
+			}
+		}
+		return nearestObject;
+	}
 
 
 
@@ -158,7 +188,12 @@ public class PlayerControl : MonoBehaviour
 	{
 		// grab our current _velocity to use as a base for all calculations
 		_velocity = _controller.velocity;
-		
+		//Find nearest enemy
+		GameObject target = GetClosestObject ("Enemy");
+		Vector3 dir = target.transform.position - transform.position;
+
+
+
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 
@@ -275,12 +310,42 @@ public class PlayerControl : MonoBehaviour
 				Collider2D[] overlappedEnemies = Physics2D.OverlapCircleAll(transform.position, AttackRadius, enemyLayerMask);
 				for (int i=0;i<overlappedEnemies.Length;i++)
 				{
-
 					GameObject e = overlappedEnemies[i].gameObject;
 					//Debug.Log (e.tag);
 					if (e.tag == "Enemy")
 					{
-						if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
+
+						if (dir.normalized.x < 0) //LEFT of PLAYER
+						{
+							if (!isFacingRight)
+							{
+								if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
+								{
+									sounds[5].Play ();
+									e.GetComponent<RedEnemyAI>().TakeDamage (2);
+								}
+								else if (e.GetComponent<RedEnemyAI>().checkDead())
+								{
+									Destroy(e.gameObject);
+								}
+							}
+						}
+						else if (dir.normalized.x > 0) // Right of enemy
+						{
+							if (isFacingRight)
+							{
+								if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
+								{
+									sounds[5].Play ();
+									e.GetComponent<RedEnemyAI>().TakeDamage (2);
+								}
+								else if (e.GetComponent<RedEnemyAI>().checkDead())
+								{
+									Destroy(e.gameObject);
+								}
+							}
+						}
+						/*if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
 						{
 							sounds[5].Play ();
 							e.GetComponent<RedEnemyAI>().TakeDamage (2);
@@ -288,7 +353,7 @@ public class PlayerControl : MonoBehaviour
 						else if (e.GetComponent<RedEnemyAI>().checkDead())
 						{
 							Destroy(e.gameObject);
-						}
+						}*/
 					}
 				}
 

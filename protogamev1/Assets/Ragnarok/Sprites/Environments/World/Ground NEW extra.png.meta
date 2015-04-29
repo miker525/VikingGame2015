@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-guid: 65facfdc13f8e5a4d9de8dbc92875653
+guid: 81a2f3a590a38294cafb1998e31eab14
 TextureImporter:
   fileIDToRecycleName:
-    21300000: physical_0
-    21300002: physical_1
-    21300004: physical_2
-    21300006: physical_3
-    21300008: physical_4
-    21300010: physical_5
-    21300012: physical_6
+    21300000: 15SP_Ground_NEW_NL_02_0
+    21300002: 15SP_Ground_NEW_NL_02_1
+    21300004: 15SP_Ground_NEW_NL_02_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,73 +46,33 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: physical_0
+    - name: 15SP_Ground_NEW_NL_02_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
+        x: 5
+        y: 15
         width: 25
-        height: 25
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: physical_1
+    - name: 15SP_Ground_NEW_NL_02_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 0
+        x: 40
+        y: 15
         width: 25
-        height: 25
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: physical_2
+    - name: 15SP_Ground_NEW_NL_02_2
       rect:
         serializedVersion: 2
-        x: 343
-        y: 0
-        width: 17
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: physical_3
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 0
-        width: 24
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: physical_4
-      rect:
-        serializedVersion: 2
-        x: 537
-        y: 0
-        width: 26
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: physical_5
-      rect:
-        serializedVersion: 2
-        x: 747
-        y: 0
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: physical_6
-      rect:
-        serializedVersion: 2
-        x: 835
-        y: 0
-        width: 34
-        height: 10
+        x: 75
+        y: 15
+        width: 25
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

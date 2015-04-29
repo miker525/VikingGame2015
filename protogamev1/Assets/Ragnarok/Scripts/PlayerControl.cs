@@ -31,7 +31,8 @@ public class PlayerControl : MonoBehaviour
 	private float swingtime = .28f;
 	private float dmgtime = 2.5f;
 	private AudioSource[] sounds;
-
+	private GameObject target;
+	private GameObject nearestObject;
 	void Awake()
 	{
 		_animator = GetComponent<Animator>();
@@ -161,10 +162,12 @@ public class PlayerControl : MonoBehaviour
 		}
 		renderer.enabled = true;
 	}
+
 	GameObject GetClosestObject(string tag)
 	{
+		//THERE WAS A HUGE MEMORY LEAK HERE
+		//IT IS GONE NOW
 		GameObject[] objects = GameObject.FindGameObjectsWithTag (tag);
-		GameObject nearestObject = new GameObject();
 		for (int i=0;i<objects.Length;i++)
 		{
 			GameObject e = objects[i];
@@ -189,7 +192,7 @@ public class PlayerControl : MonoBehaviour
 		// grab our current _velocity to use as a base for all calculations
 		_velocity = _controller.velocity;
 		//Find nearest enemy
-		GameObject target = GetClosestObject ("Enemy");
+		target = GetClosestObject ("Enemy");
 		Vector3 dir = target.transform.position - transform.position;
 
 
@@ -279,29 +282,106 @@ public class PlayerControl : MonoBehaviour
 					Debug.Log (e.tag);
 					if (e.tag == "Barrell")
 					{
-						if (e.GetComponent<BarrelScript>().CheckDamage() >= e.GetComponent<BarrelScript>().maxHealth)
+						Vector3 drx = e.transform.position - transform.position;
+						if (drx.normalized.x < 0) //LEFT of PLAYER
 						{
-							sounds[4].Play ();
-							Destroy(e.gameObject);
+							if (!isFacingRight)
+							{
+									if (e.GetComponent<BarrelScript>().CheckDamage() >= e.GetComponent<BarrelScript>().maxHealth)
+									{
+										sounds[4].Play ();
+										Destroy(e.gameObject);
+									}
+									else
+									{
+										sounds[5].Play ();
+										if (Weapon == 1)
+										{
+											e.GetComponent<BarrelScript>().TakeDamage(2);
+										}
+										else if (Weapon == 2)
+										{
+											e.GetComponent<BarrelScript>().TakeDamage(1);
+										}
+										
+									}
+							}
 						}
-						else
+						else if (drx.normalized.x > 0) // Right of enemy
 						{
-							sounds[5].Play ();
-							e.GetComponent<BarrelScript>().TakeDamage(1);
+							if (isFacingRight)
+							{
+									if (e.GetComponent<BarrelScript>().CheckDamage() >= e.GetComponent<BarrelScript>().maxHealth)
+									{
+										sounds[4].Play ();
+										Destroy(e.gameObject);
+									}
+									else
+									{
+										sounds[5].Play ();
+										if (Weapon == 1)
+										{
+											e.GetComponent<BarrelScript>().TakeDamage(2);
+										}
+										else if (Weapon == 2)
+										{
+											e.GetComponent<BarrelScript>().TakeDamage(1);
+										}
+									}
+							}
 						}
+
 					}
 					else if (e.tag == "Crate")
 					{
-						if (e.GetComponent<CrateScript>().CheckDamage() >= e.GetComponent<CrateScript>().maxHealth)
+						Vector3 drx = e.transform.position - transform.position;
+						if (drx.normalized.x < 0) //LEFT of PLAYER
 						{
-							sounds[4].Play ();
-							Destroy(e.gameObject);
+							if (!isFacingRight)
+							{
+								if (e.GetComponent<CrateScript>().CheckDamage() >= e.GetComponent<CrateScript>().maxHealth)
+								{
+									sounds[4].Play ();
+									Destroy(e.gameObject);
+								}
+								else
+								{
+									sounds[5].Play ();
+									if (Weapon == 1)
+									{
+										e.GetComponent<CrateScript>().TakeDamage(2);
+									}
+									else if (Weapon == 2)
+									{
+										e.GetComponent<CrateScript>().TakeDamage(1);
+									}
+								}
+							}
 						}
-						else
+						else if (drx.normalized.x > 0) // Right of enemy
 						{
-							sounds[5].Play ();
-							e.GetComponent<CrateScript>().TakeDamage(1);
+							if (isFacingRight)
+							{
+								if (e.GetComponent<CrateScript>().CheckDamage() >= e.GetComponent<CrateScript>().maxHealth)
+								{
+									sounds[4].Play ();
+									Destroy(e.gameObject);
+								}
+								else
+								{
+									sounds[5].Play ();
+									if (Weapon == 1)
+									{
+										e.GetComponent<CrateScript>().TakeDamage(2);
+									}
+									else if (Weapon == 2)
+									{
+										e.GetComponent<CrateScript>().TakeDamage(1);
+									}
+								}
+							}
 						}
+
 
 					}
 				}
@@ -322,7 +402,15 @@ public class PlayerControl : MonoBehaviour
 								if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
 								{
 									sounds[5].Play ();
-									e.GetComponent<RedEnemyAI>().TakeDamage (2);
+									if (Weapon == 1)
+									{
+										e.GetComponent<RedEnemyAI>().TakeDamage (2);
+									}
+									else if (Weapon == 2)
+									{
+										e.GetComponent<RedEnemyAI>().TakeDamage (3);
+									}
+
 								}
 								else if (e.GetComponent<RedEnemyAI>().checkDead())
 								{
@@ -337,7 +425,14 @@ public class PlayerControl : MonoBehaviour
 								if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
 								{
 									sounds[5].Play ();
-									e.GetComponent<RedEnemyAI>().TakeDamage (2);
+									if (Weapon == 1)
+									{
+										e.GetComponent<RedEnemyAI>().TakeDamage (2);
+									}
+									else if (Weapon == 2)
+									{
+										e.GetComponent<RedEnemyAI>().TakeDamage (3);
+									}
 								}
 								else if (e.GetComponent<RedEnemyAI>().checkDead())
 								{
@@ -345,15 +440,6 @@ public class PlayerControl : MonoBehaviour
 								}
 							}
 						}
-						/*if (!e.GetComponent<RedEnemyAI>().checkDead() && !e.GetComponent<RedEnemyAI>().checkHurt())
-						{
-							sounds[5].Play ();
-							e.GetComponent<RedEnemyAI>().TakeDamage (2);
-						}
-						else if (e.GetComponent<RedEnemyAI>().checkDead())
-						{
-							Destroy(e.gameObject);
-						}*/
 					}
 				}
 

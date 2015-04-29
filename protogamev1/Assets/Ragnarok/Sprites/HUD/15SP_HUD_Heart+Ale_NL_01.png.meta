@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: f0a0b1393d5f04548aa202f2ed518686
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 15SP_HUD_Heart+Ale_NL_01_0
+    21300002: 15SP_HUD_Heart+Ale_NL_01_1
+    21300004: 15SP_HUD_Heart+Ale_NL_01_2
+    21300006: 15SP_HUD_Heart+Ale_NL_01_3
+    21300008: 15SP_HUD_Heart+Ale_NL_01_4
+    21300010: 15SP_HUD_Heart+Ale_NL_01_5
+    21300012: 15SP_HUD_Heart+Ale_NL_01_6
+    21300014: 15SP_HUD_Heart+Ale_NL_01_7
+    21300016: 15SP_HUD_Heart+Ale_NL_01_8
+    21300018: 15SP_HUD_Heart+Ale_NL_01_9
+    21300020: 15SP_HUD_Heart+Ale_NL_01_10
+    21300022: 15SP_HUD_Heart+Ale_NL_01_11
+    21300024: 15SP_HUD_Heart+Ale_NL_01_12
+    21300026: 15SP_HUD_Heart+Ale_NL_01_13
+    21300028: 15SP_HUD_Heart+Ale_NL_01_14
+    21300030: 15SP_HUD_Heart+Ale_NL_01_15
+    21300032: 15SP_HUD_Heart+Ale_NL_01_16
+    21300034: 15SP_HUD_Heart+Ale_NL_01_17
+    21300036: 15SP_HUD_Heart+Ale_NL_01_18
+    21300038: 15SP_HUD_Heart+Ale_NL_01_19
+    21300040: 15SP_HUD_Heart+Ale_NL_01_20
+    21300042: 15SP_HUD_Heart+Ale_NL_01_21
+    21300044: 15SP_HUD_Heart+Ale_NL_01_22
+    21300046: 15SP_HUD_Heart+Ale_NL_01_23
+    21300048: 15SP_HUD_Heart+Ale_NL_01_24
+    21300050: 15SP_HUD_Heart+Ale_NL_01_25
+    21300052: 15SP_HUD_Heart+Ale_NL_01_26
+    21300054: 15SP_HUD_Heart+Ale_NL_01_27
+    21300056: 15SP_HUD_Heart+Ale_NL_01_28
+    21300058: 15SP_HUD_Heart+Ale_NL_01_29
+    21300060: 15SP_HUD_Heart+Ale_NL_01_30
+    21300062: 15SP_HUD_Heart+Ale_NL_01_31
+    21300064: 15SP_HUD_Heart+Ale_NL_01_32
+    21300066: 15SP_HUD_Heart+Ale_NL_01_33
+    21300068: 15SP_HUD_Heart+Ale_NL_01_34
+    21300070: 15SP_HUD_Heart+Ale_NL_01_35
+    21300072: 15SP_HUD_Heart+Ale_NL_01_36
+    21300074: 15SP_HUD_Heart+Ale_NL_01_37
+    21300076: 15SP_HUD_Heart+Ale_NL_01_38
+    21300078: 15SP_HUD_Heart+Ale_NL_01_39
+    21300080: 15SP_HUD_Heart+Ale_NL_01_40
+    21300082: 15SP_HUD_Heart+Ale_NL_01_41
+    21300084: 15SP_HUD_Heart+Ale_NL_01_42
+    21300086: 15SP_HUD_Heart+Ale_NL_01_43
+    21300088: 15SP_HUD_Heart+Ale_NL_01_44
+    21300090: 15SP_HUD_Heart+Ale_NL_01_45
+    21300092: 15SP_HUD_Heart+Ale_NL_01_46
+    21300094: 15SP_HUD_Heart+Ale_NL_01_47
+    21300096: 15SP_HUD_Heart+Ale_NL_01_48
+    21300098: 15SP_HUD_Heart+Ale_NL_01_49
+    21300100: 15SP_HUD_Heart+Ale_NL_01_50
+    21300102: 15SP_HUD_Heart+Ale_NL_01_51
+    21300104: 15SP_HUD_Heart+Ale_NL_01_52
+    21300106: 15SP_HUD_Heart+Ale_NL_01_53
+    21300108: 15SP_HUD_Heart+Ale_NL_01_54
+    21300110: 15SP_HUD_Heart+Ale_NL_01_55
+    21300112: 15SP_HUD_Heart+Ale_NL_01_56
+    21300114: 15SP_HUD_Heart+Ale_NL_01_57
+    21300116: 15SP_HUD_Heart+Ale_NL_01_58
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 15SP_HUD_Heart+Ale_NL_01_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_8
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_9
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 338
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 321
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 321
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 321
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_13
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 321
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_14
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 321
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_15
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 321
+        width: 46
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_56
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 311
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_57
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 292
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_58
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 273
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

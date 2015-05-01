@@ -263,7 +263,7 @@ public class PlayerControl : MonoBehaviour
 				}
 				isAttacking = true;
 			}
-			int environmentLayerMask = 1 << LayerMask.NameToLayer("Enivornment");
+			int environmentLayerMask = 1 << LayerMask.NameToLayer("Environment");
 			int enemyLayerMask = 1 << LayerMask.NameToLayer("Enemy");
 			//Collider[] overlappedThings = Physics2D.OverlapCircleAll(transform.position.x, transform.position.y, 2f, environmentLayerMask);
 

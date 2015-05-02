@@ -49,9 +49,10 @@
      <Compile Include="Assets\Other\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\BarrelScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\BossAI.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\CivScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\CrateScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\EditorGrid.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\HUDScript.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\HUDHealthScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\Level_01_Background_Music.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />

@@ -12,12 +12,12 @@ public class PlayerControl : MonoBehaviour
 	public float inAirDamping = 5f;
 	public float jumpHeight = 3f;
 	public float AttackRadius = 0.3f;
+	public int CurrentLevel = 1;
 	private bool isAttacking = false;
 	private bool hasSword = false;
 	private bool hasMace = false;
 	private int health = 5;
 	private int Weapon = 1;
-	public int CurrentLevel = 1;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 	private CharacterController2D _controller;
@@ -98,12 +98,11 @@ public class PlayerControl : MonoBehaviour
 		{
 			if (CurrentLevel == 1)
 			{
-				CurrentLevel++;
 				Application.LoadLevel("TestScene");
 			}
 			else if (CurrentLevel == 2)
 			{
-				//NextLevel
+				Application.LoadLevel ("Level3");
 			}
 		} else if (col.gameObject.tag == "Sword") {
 			if (!hasSword)
@@ -148,6 +147,14 @@ public class PlayerControl : MonoBehaviour
 	public bool checkDead()
 	{
 		return isDead;
+	}
+	public int checkHealth()
+	{
+		return health;
+	}
+	public int checkWeapon()
+	{
+		return Weapon;
 	}
 
 	IEnumerator Flash()
@@ -270,6 +277,11 @@ public class PlayerControl : MonoBehaviour
 			if (swingtime > 0) 
 			{
 				swingtime -= Time.deltaTime;
+				if (!sounds[9].isPlaying)
+				{
+					sounds[9].Play ();
+				}
+
 			} 
 			else if (swingtime <= 0) 
 			{
@@ -384,6 +396,10 @@ public class PlayerControl : MonoBehaviour
 
 
 					}
+					else
+					{
+						//sounds[7].Play ();
+					}
 				}
 
 				/*Checking For Enemies */
@@ -451,18 +467,22 @@ public class PlayerControl : MonoBehaviour
 		{
 			if (Weapon == 1 && hasSword)
 			{
+				sounds[8].Play ();
 				Weapon = 2;
 			}
 			else if (Weapon == 2 && hasMace)
 			{
+				sounds[8].Play ();
 				Weapon = 3;
 			}
 			else if (Weapon == 2 && !hasMace)
 			{
+				sounds[8].Play ();
 				Weapon = 1;
 			}
 			else if (Weapon == 3)
 			{
+				sounds[8].Play ();
 				Weapon = 1;
 			}
 		}
@@ -470,18 +490,22 @@ public class PlayerControl : MonoBehaviour
 		{
 			if (Weapon == 1 && hasMace)
 			{
+				sounds[8].Play ();
 				Weapon = 3;
 			}
 			else if (Weapon == 1 && !hasMace && hasSword)
 			{
+				sounds[8].Play ();
 				Weapon = 2;
 			}
 			else if (Weapon == 2)
 			{
+				sounds[8].Play ();
 				Weapon = 1;
 			}
 			else if (Weapon == 3)
 			{
+				sounds[8].Play ();
 				Weapon = 2;
 			}
 		}

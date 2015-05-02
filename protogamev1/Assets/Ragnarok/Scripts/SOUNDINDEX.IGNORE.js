@@ -11,6 +11,8 @@
 	4: wood destruction sound
 	5: enemy / wood hit sound
 	6: player hit sound
-
+	7: Environment no damage sound
+	8: Weapon Switch
+	9: Weapon Swing
 
 */

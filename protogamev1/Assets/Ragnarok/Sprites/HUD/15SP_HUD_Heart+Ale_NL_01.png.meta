@@ -185,7 +185,7 @@ TextureImporter:
     - name: 15SP_HUD_Heart+Ale_NL_01_8
       rect:
         serializedVersion: 2
-        x: 252
+        x: 249
         y: 338
         width: 19
         height: 92
@@ -195,7 +195,7 @@ TextureImporter:
     - name: 15SP_HUD_Heart+Ale_NL_01_9
       rect:
         serializedVersion: 2
-        x: 281
+        x: 276
         y: 338
         width: 19
         height: 92
@@ -205,62 +205,62 @@ TextureImporter:
     - name: 15SP_HUD_Heart+Ale_NL_01_10
       rect:
         serializedVersion: 2
-        x: 310
-        y: 321
+        x: 334
+        y: 323
         width: 46
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_11
       rect:
         serializedVersion: 2
-        x: 365
-        y: 321
+        x: 389
+        y: 322
         width: 46
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_12
       rect:
         serializedVersion: 2
-        x: 420
-        y: 321
+        x: 444
+        y: 323
         width: 46
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_13
       rect:
         serializedVersion: 2
-        x: 475
-        y: 321
+        x: 500
+        y: 323
         width: 46
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_14
       rect:
         serializedVersion: 2
-        x: 530
+        x: 555
         y: 321
         width: 46
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_15
       rect:
         serializedVersion: 2
-        x: 585
-        y: 321
+        x: 609
+        y: 319
         width: 46
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_56
       rect:
@@ -270,7 +270,7 @@ TextureImporter:
         width: 19
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_57
       rect:
@@ -280,7 +280,7 @@ TextureImporter:
         width: 19
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: 15SP_HUD_Heart+Ale_NL_01_58
       rect:
@@ -290,7 +290,17 @@ TextureImporter:
         width: 19
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 15SP_HUD_Heart+Ale_NL_01_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 334
+        width: 26
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

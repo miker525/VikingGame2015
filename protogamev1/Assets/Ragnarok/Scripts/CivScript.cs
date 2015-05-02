@@ -26,7 +26,7 @@ public class CivScript : MonoBehaviour
 	private float hurtTimer = .40f;
 	private bool isFlashing = false;
 	private float dmgtime = 2.5f;
-
+	
 	// Use this for initialization
 	void Awake()
 	{
@@ -37,8 +37,8 @@ public class CivScript : MonoBehaviour
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
 		//Origin = transform.position;
 	}
-
-
+	
+	
 	void Flip()
 	{
 		isFacingRight = !isFacingRight;
@@ -69,7 +69,7 @@ public class CivScript : MonoBehaviour
 	{
 		return isDead;
 	}
-
+	
 	void MoveTo(Vector3 moveTo)
 	{
 		if (moveTo.normalized.x > 0) 
@@ -87,12 +87,12 @@ public class CivScript : MonoBehaviour
 		animatorz.Play (Animator.StringToHash ("Walk"));
 		transform.Translate(moveTo.normalized.x * runSpeed * Time.deltaTime, 0, 0);
 	}
-
+	
 	void Retreat(Vector3 vec)
 	{
 		MoveTo (-vec);
 	}
-
+	
 	IEnumerator Flash()
 	{
 		isFlashing = true;
@@ -105,7 +105,7 @@ public class CivScript : MonoBehaviour
 		}
 		renderer.enabled = true;
 	}
-
+	
 	void onControllerCollider( RaycastHit2D hit )
 	{
 		if( hit.normal.y == 1f )
@@ -123,9 +123,9 @@ public class CivScript : MonoBehaviour
 	{
 		
 	}
-
-
-
+	
+	
+	
 	// Update is called once per frame
 	void Update () 
 	{
@@ -135,19 +135,19 @@ public class CivScript : MonoBehaviour
 		dot = Vector3.Dot(transform.forward, dir.normalized);
 		if( _controller.isGrounded )
 			_velocity.y = 0;
-	
+		
 		if (distance < maxSqrDistance && distance > .18 && !isHurt) 
 		{
 			isRunning = true;
 			//Retreat (dir);
 			animatorz.Play (Animator.StringToHash ("Walk"));
 		}
-
+		
 		if (isRunning) 
 		{
 			Retreat (dir);
 		}
-
+		
 		if (isHurt) 
 		{
 			if (!isFlashing) 
@@ -165,7 +165,7 @@ public class CivScript : MonoBehaviour
 				dmgtime =  2.5f;
 			}
 		}
-
+		
 		var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
 		_velocity.x = Mathf.Lerp( _velocity.x, normalizedHorizontalSpeed * runSpeed, Time.deltaTime * smoothedMovementFactor );
 		

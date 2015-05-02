@@ -33,7 +33,7 @@ public class RedEnemyAI : MonoBehaviour {
 	private float dmgtime = 2.5f;
 	private bool isFlashing = false;
 	private float swingtime = .75f;
-
+	AudioSource bearsonDmgSnd;
 	void Awake()
 	{
 		animatorz = GetComponent<Animator> ();
@@ -42,6 +42,7 @@ public class RedEnemyAI : MonoBehaviour {
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
 		Origin = transform.position;
+		bearsonDmgSnd = GetComponent<AudioSource> ();
 	}
 	
 	#region Custom Functions
@@ -209,7 +210,7 @@ public class RedEnemyAI : MonoBehaviour {
 								{
 									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
 									{
-										//sounds[5].Play ();
+										bearsonDmgSnd.Play ();
 										e.GetComponent<PlayerControl>().TakeDamage (2);
 									}
 								}
@@ -220,7 +221,7 @@ public class RedEnemyAI : MonoBehaviour {
 								{
 									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
 									{
-										//sounds[5].Play ();
+										bearsonDmgSnd.Play ();
 										e.GetComponent<PlayerControl>().TakeDamage (2);
 									}
 								}
@@ -256,7 +257,7 @@ public class RedEnemyAI : MonoBehaviour {
 								{
 									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
 									{
-										//sounds[5].Play ();
+										bearsonDmgSnd.Play ();
 										e.GetComponent<PlayerControl>().TakeDamage (2);
 									}
 								}
@@ -267,7 +268,7 @@ public class RedEnemyAI : MonoBehaviour {
 								{
 									if (!e.GetComponent<PlayerControl>().checkDead() && !e.GetComponent<PlayerControl>().checkHurt())
 									{
-										//sounds[5].Play ();
+										bearsonDmgSnd.Play ();
 										e.GetComponent<PlayerControl>().TakeDamage (2);
 									}
 								}

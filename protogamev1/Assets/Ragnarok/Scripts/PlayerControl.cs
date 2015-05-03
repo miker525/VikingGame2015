@@ -18,6 +18,7 @@ public class PlayerControl : MonoBehaviour
 	private bool hasMace = false;
 	private int health = 5;
 	private int Weapon = 1;
+	private int Score = 0;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 	private CharacterController2D _controller;
@@ -65,16 +66,20 @@ public class PlayerControl : MonoBehaviour
 		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.tag );
 		if (col.gameObject.tag == "Sapphire") {
 			sounds [2].Play ();
+			Score += 40;
 			Destroy (col.gameObject);
 			//this.GetComponent<healthScript>().health -= 1;
 		} else if (col.gameObject.tag == "Coin") {
 			sounds [1].Play ();
+			Score += 20;
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "Diamond") {
 			sounds [2].Play ();
+			Score += 100;
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "Emerald") {
 			sounds [2].Play ();
+			Score += 60;
 			Destroy (col.gameObject);
 		} else if (col.gameObject.tag == "GodRune") {
 			sounds [3].Play ();
@@ -155,6 +160,10 @@ public class PlayerControl : MonoBehaviour
 	public int checkWeapon()
 	{
 		return Weapon;
+	}
+	public int checkScore()
+	{
+		return Score;
 	}
 
 	IEnumerator Flash()

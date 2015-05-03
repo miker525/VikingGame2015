@@ -1,13 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ragnarok\Scripts\CivScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ragnarok\Scripts\HUDWeaponScript.cs">
     <Files>
-      <File FileName="Assets\Ragnarok\Scripts\CivScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Ragnarok\Scripts\SOUNDINDEX.IGNORE.js" Line="1" Column="1" />
-      <File FileName="Assets\Ragnarok\Scripts\PlayerControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Ragnarok\Scripts\RuneEffect.cs" Line="1" Column="1" />
-      <File FileName="Assets\Ragnarok\Scripts\RedEnemyAI.cs" Line="1" Column="1" />
-      <File FileName="Assets\Ragnarok\Scripts\HUDHealthScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Ragnarok\Scripts\HUDHealthScript.cs" Line="19" Column="58" />
+      <File FileName="Assets\Ragnarok\Scripts\HUDWeaponScript.cs" Line="11" Column="28" />
+      <File FileName="Assets\Ragnarok\Scripts\HUDScoreScript.cs" Line="20" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

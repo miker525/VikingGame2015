@@ -55,6 +55,7 @@
      <Compile Include="Assets\Ragnarok\Scripts\HUDHealthScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\HUDScoreScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\HUDWeaponScript.cs" />
+     <Compile Include="Assets\Ragnarok\Scripts\LevelTransition.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\Level_01_Background_Music.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\PlayerControl.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\RedEnemyAI.cs" />

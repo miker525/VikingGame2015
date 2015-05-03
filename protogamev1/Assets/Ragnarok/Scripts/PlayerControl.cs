@@ -101,14 +101,7 @@ public class PlayerControl : MonoBehaviour
 			health = 0;
 		} else if (col.gameObject.tag == "NextLevel") 
 		{
-			if (CurrentLevel == 1)
-			{
-				Application.LoadLevel("TestScene");
-			}
-			else if (CurrentLevel == 2)
-			{
-				Application.LoadLevel ("Level3");
-			}
+			Application.LoadLevel (col.gameObject.GetComponent<LevelTransition>().getNextLevel());
 		} else if (col.gameObject.tag == "Sword") {
 			if (!hasSword)
 			{

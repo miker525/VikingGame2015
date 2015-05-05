@@ -44,6 +44,48 @@ TextureImporter:
     21300078: 15SP_Buildings_NEW_NL_01_39
     21300080: 15SP_Buildings_NEW_NL_01_40
     21300082: 15SP_Buildings_NEW_NL_01_41
+    21300084: Buildings NEW_0
+    21300086: Buildings NEW_1
+    21300088: Buildings NEW_2
+    21300090: Buildings NEW_3
+    21300092: Buildings NEW_4
+    21300094: Buildings NEW_5
+    21300096: Buildings NEW_6
+    21300098: Buildings NEW_7
+    21300100: Buildings NEW_8
+    21300102: Buildings NEW_9
+    21300104: Buildings NEW_10
+    21300106: Buildings NEW_11
+    21300108: Buildings NEW_12
+    21300110: Buildings NEW_13
+    21300112: Buildings NEW_14
+    21300114: Buildings NEW_15
+    21300116: Buildings NEW_16
+    21300118: Buildings NEW_17
+    21300120: Buildings NEW_18
+    21300122: Buildings NEW_19
+    21300124: Buildings NEW_20
+    21300126: Buildings NEW_21
+    21300128: Buildings NEW_22
+    21300130: Buildings NEW_23
+    21300132: Buildings NEW_24
+    21300134: Buildings NEW_25
+    21300136: Buildings NEW_26
+    21300138: Buildings NEW_27
+    21300140: Buildings NEW_28
+    21300142: Buildings NEW_29
+    21300144: Buildings NEW_30
+    21300146: Buildings NEW_31
+    21300148: Buildings NEW_32
+    21300150: Buildings NEW_33
+    21300152: Buildings NEW_34
+    21300154: Buildings NEW_35
+    21300156: Buildings NEW_36
+    21300158: Buildings NEW_37
+    21300160: Buildings NEW_38
+    21300162: Buildings NEW_39
+    21300164: Buildings NEW_40
+    21300166: Buildings NEW_41
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -85,7 +127,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: 15SP_Buildings_NEW_NL_01_0
+    - name: Buildings NEW_0
       rect:
         serializedVersion: 2
         x: 9
@@ -95,7 +137,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_1
+    - name: Buildings NEW_1
       rect:
         serializedVersion: 2
         x: 84
@@ -105,7 +147,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_2
+    - name: Buildings NEW_2
       rect:
         serializedVersion: 2
         x: 184
@@ -115,7 +157,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_3
+    - name: Buildings NEW_3
       rect:
         serializedVersion: 2
         x: 309
@@ -125,7 +167,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_4
+    - name: Buildings NEW_4
       rect:
         serializedVersion: 2
         x: 384
@@ -135,7 +177,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_5
+    - name: Buildings NEW_5
       rect:
         serializedVersion: 2
         x: 484
@@ -145,7 +187,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_6
+    - name: Buildings NEW_6
       rect:
         serializedVersion: 2
         x: 9
@@ -155,7 +197,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_7
+    - name: Buildings NEW_7
       rect:
         serializedVersion: 2
         x: 84
@@ -165,7 +207,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_8
+    - name: Buildings NEW_8
       rect:
         serializedVersion: 2
         x: 184
@@ -175,7 +217,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_9
+    - name: Buildings NEW_9
       rect:
         serializedVersion: 2
         x: 309
@@ -185,7 +227,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_10
+    - name: Buildings NEW_10
       rect:
         serializedVersion: 2
         x: 384
@@ -195,7 +237,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_11
+    - name: Buildings NEW_11
       rect:
         serializedVersion: 2
         x: 484
@@ -205,7 +247,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_12
+    - name: Buildings NEW_12
       rect:
         serializedVersion: 2
         x: 9
@@ -215,7 +257,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_13
+    - name: Buildings NEW_13
       rect:
         serializedVersion: 2
         x: 84
@@ -225,7 +267,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_14
+    - name: Buildings NEW_14
       rect:
         serializedVersion: 2
         x: 184
@@ -235,7 +277,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_15
+    - name: Buildings NEW_15
       rect:
         serializedVersion: 2
         x: 309
@@ -245,7 +287,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_16
+    - name: Buildings NEW_16
       rect:
         serializedVersion: 2
         x: 384
@@ -255,7 +297,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_17
+    - name: Buildings NEW_17
       rect:
         serializedVersion: 2
         x: 484
@@ -265,7 +307,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_18
+    - name: Buildings NEW_18
       rect:
         serializedVersion: 2
         x: 30
@@ -275,7 +317,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_19
+    - name: Buildings NEW_19
       rect:
         serializedVersion: 2
         x: 115
@@ -285,7 +327,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_20
+    - name: Buildings NEW_20
       rect:
         serializedVersion: 2
         x: 200
@@ -295,7 +337,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_21
+    - name: Buildings NEW_21
       rect:
         serializedVersion: 2
         x: 285
@@ -305,7 +347,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_22
+    - name: Buildings NEW_22
       rect:
         serializedVersion: 2
         x: 395
@@ -315,7 +357,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_23
+    - name: Buildings NEW_23
       rect:
         serializedVersion: 2
         x: 530
@@ -325,7 +367,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_24
+    - name: Buildings NEW_24
       rect:
         serializedVersion: 2
         x: 615
@@ -333,9 +375,9 @@ TextureImporter:
         width: 100
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_25
+    - name: Buildings NEW_25
       rect:
         serializedVersion: 2
         x: 725
@@ -345,7 +387,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_26
+    - name: Buildings NEW_26
       rect:
         serializedVersion: 2
         x: 30
@@ -355,7 +397,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_27
+    - name: Buildings NEW_27
       rect:
         serializedVersion: 2
         x: 115
@@ -365,7 +407,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_28
+    - name: Buildings NEW_28
       rect:
         serializedVersion: 2
         x: 200
@@ -375,7 +417,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_29
+    - name: Buildings NEW_29
       rect:
         serializedVersion: 2
         x: 285
@@ -385,7 +427,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_30
+    - name: Buildings NEW_30
       rect:
         serializedVersion: 2
         x: 395
@@ -395,7 +437,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_31
+    - name: Buildings NEW_31
       rect:
         serializedVersion: 2
         x: 530
@@ -405,7 +447,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_32
+    - name: Buildings NEW_32
       rect:
         serializedVersion: 2
         x: 615
@@ -415,7 +457,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_33
+    - name: Buildings NEW_33
       rect:
         serializedVersion: 2
         x: 725
@@ -425,7 +467,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_34
+    - name: Buildings NEW_34
       rect:
         serializedVersion: 2
         x: 30
@@ -435,7 +477,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_35
+    - name: Buildings NEW_35
       rect:
         serializedVersion: 2
         x: 200
@@ -445,7 +487,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_36
+    - name: Buildings NEW_36
       rect:
         serializedVersion: 2
         x: 285
@@ -455,7 +497,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_37
+    - name: Buildings NEW_37
       rect:
         serializedVersion: 2
         x: 395
@@ -465,7 +507,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_38
+    - name: Buildings NEW_38
       rect:
         serializedVersion: 2
         x: 115
@@ -475,7 +517,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_39
+    - name: Buildings NEW_39
       rect:
         serializedVersion: 2
         x: 530
@@ -485,7 +527,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_40
+    - name: Buildings NEW_40
       rect:
         serializedVersion: 2
         x: 615
@@ -495,7 +537,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 15SP_Buildings_NEW_NL_01_41
+    - name: Buildings NEW_41
       rect:
         serializedVersion: 2
         x: 725

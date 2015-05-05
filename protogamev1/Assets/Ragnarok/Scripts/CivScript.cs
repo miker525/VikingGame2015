@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CivScript : MonoBehaviour 
 {
-	public GameObject target;
+	public GameObject target; //= GameObject.Find ("Player");
 	public int health = 2;
 	private float normalizedHorizontalSpeed = 0;
 	private float gravity = -120f;

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RedEnemyAI : MonoBehaviour {
 	// movement config
-	public GameObject target;
+	public GameObject target; //= GameObject.Find ("Player");
 	public int health = 5;
 	public int Weapon = 1;
 	[HideInInspector]

@@ -19,8 +19,8 @@ public class PolioBossAI : MonoBehaviour
 	private bool isChasing = true;
 	private bool isFacingRight = true;
 	private const float increaseInterval = 3f; // how often do you want the speed to change
-	private const float change = 1f; // how much do you want the speed to change
-	private const float maxSpeed = 3f;
+	private const float change = .5f; // how much do you want the speed to change
+	private const float maxSpeed = 2.5f;
 	private const float minSpeed = .5f;
 	private float currentSpeed = 1f;
 	float timer = increaseInterval;
@@ -53,10 +53,12 @@ public class PolioBossAI : MonoBehaviour
 
 	void Awake()
 	{
+		animatorz = GetComponent<Animator> ();
 		_controller = GetComponent<CharacterController2D>();
 		_controller.onControllerCollidedEvent += onControllerCollider;
 		_controller.onTriggerEnterEvent += onTriggerEnterEvent;
 		_controller.onTriggerExitEvent += onTriggerExitEvent;
+		//target = GameObject.Find ("Player");
 	}
 
 
@@ -83,18 +85,40 @@ public class PolioBossAI : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (currentSpeed < maxSpeed) 
-		{
-			if (timer > 0)
-			{
-				timer -= Time.deltaTime;
-			}
-			else if (timer <=0)
-			{
-				currentSpeed += change;
-			}
+
+		/*_velocity = _controller.velocity;
+		Vector3 dir = target.transform.position - transform.position;
+		float distance = dir.sqrMagnitude, //Length squared because a sqrt is expensive
+		dot = Vector3.Dot(transform.forward, dir.normalized);
+		if( _controller.isGrounded )
+			_velocity.y = 0;
+
+		if (isChasing) {
+			Chase (dir);
+			animatorz.Play (Animator.StringToHash( "PolioAnimator" ) );
 		}
 
+		var smoothedMovementFactor = _controller.isGrounded ? groundDamping : inAirDamping; // how fast do we change direction?
+		_velocity.x = Mathf.Lerp( _velocity.x, normalizedHorizontalSpeed * currentSpeed, Time.deltaTime * smoothedMovementFactor );
+		
+		// apply gravity before moving
+		_velocity.y += gravity * Time.deltaTime;
+		_controller.move( _velocity * Time.deltaTime );*/
+		if (isChasing)
+		{
+			if (currentSpeed < maxSpeed) 
+			{
+				if (timer > 0)
+				{
+					timer -= Time.deltaTime;
+				}
+				else if (timer <=0)
+				{
+					currentSpeed += change;
+				}
+			}
+		}
+		
 		_velocity = _controller.velocity;
 		Vector3 dir = target.transform.position - transform.position;
 		float distance = dir.sqrMagnitude, //Length squared because a sqrt is expensive
@@ -108,12 +132,23 @@ public class PolioBossAI : MonoBehaviour
 
 			int environmentLayerMask = 1 << LayerMask.NameToLayer("Environment");
 			int playerLayerMask = 1 << LayerMask.NameToLayer("Player");
-			Collider2D[] overlappedPlayers = Physics2D.OverlapCircleAll(transform.position, 0.03f, playerLayerMask);
-			Collider2D[] overlappedEnv = Physics2D.OverlapCircleAll(transform.position, 0.03f, environmentLayerMask);
+			int enemyLayerMask = 1 << LayerMask.NameToLayer("Enemy");
+			Collider2D[] overlappedPlayers = Physics2D.OverlapCircleAll(transform.position, 0.35f, playerLayerMask);
+			Collider2D[] overlappedEnv = Physics2D.OverlapCircleAll(transform.position, 0.5f, environmentLayerMask);
+			Collider2D[] overlappedEnm = Physics2D.OverlapCircleAll(transform.position, 0.35f, enemyLayerMask);
 			for (int i=0; i<overlappedEnv.Length; i++) 
 			{
-				GameObject e = overlappedPlayers [i].gameObject;
+				GameObject e = overlappedEnv [i].gameObject;
 				Destroy(e);
+				if (currentSpeed > .5f)
+				{
+					currentSpeed -= .5f;
+				}
+			}
+			for (int i=0; i<overlappedEnm.Length;i++)
+			{
+				GameObject e = overlappedEnm[i].gameObject;
+				Destroy (e);
 				if (currentSpeed > .5f)
 				{
 					currentSpeed -= .5f;
@@ -134,6 +169,6 @@ public class PolioBossAI : MonoBehaviour
 		// apply gravity before moving
 		_velocity.y += gravity * Time.deltaTime;
 		_controller.move( _velocity * Time.deltaTime );
-
+	
 	}
 }

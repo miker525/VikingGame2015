@@ -63,7 +63,6 @@
      <Compile Include="Assets\Ragnarok\Scripts\RuneEffect.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\SceneScript.cs" />
      <Compile Include="Assets\Ragnarok\Scripts\SmoothCam.cs" />
-     <Compile Include="Assets\Ragnarok\Scripts\TileWindow.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
